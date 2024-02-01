@@ -5,7 +5,7 @@ const PORT = 8081;
 const cors = require('cors');
 const path = require('path');
 
-app.use(express.static('../client/public'))
+app.use(express.static('public'))
 
 app.use(express.json());
 app.use(cors());
