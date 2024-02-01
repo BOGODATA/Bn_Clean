@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bn</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../public/css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed'>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+    </head>
+
+<header class="head">
+    <div class="above-above-body">
+        <img src="../public/images/HomePage/DRAPEAU.png" alt="right Image" class="drapeau">
+        <img src="../public/images/HomePage/LOGO.png" alt="right Image" class="logo">
+    </div>
+    <div class="above-body-mobile">
+        <h2 class="mobiletitle-over">Du 15/03/2024 au 31/08/2024</h2>
+        <img src="../public/images/HomePage/Groupe 8.png" alt="right Image" class="mobiletitle">
+        <img src="../public/images/HomePage/IMAGEMOBILE.png" alt="right Image" class="imgmobile">
+</header>
+
+<main>
+    <body>
+        <div class="above-body">
+            <img src="../public/images/HomePage/BN.png" alt="right Image" class="bn">
+            <img src="../public/images/HomePage/TXT.png" alt="right Image" class="txt">
+        </div>
+
+        <div class="container">
+                <img src="../public/images/HomePage/BNSEUL.png" alt="Image" class="responsive-image bnseul">
+                <img src="../public/images/HomePage/BN3.png" alt="Image" class="responsive-image bn3">
+            <div class="left-part">
+                <img src="../public/images/HomePage/ENCART.png" alt="Image" class="responsive-image encart">
+                <div class="encart-overlay1"> 
+                    <h2 class="encart-title">POUR PARTICIPER :</h2>
+                    <div class="encart-body">
+                        <div class="numbers-container">
+                            <p class="num num1">1</p>
+                            <p class="num num2">2</p>
+                            <p class="num num3">3</p>
+                        </div>
+                        <div class="encart-text-wrapper">
+                            <p class="encart-text">Achetez simultanément 2 produits BN porteurs de l'offre entre le 15/03/2024 et le 31/08/2024</p>
+                            <p class="encart-text text2">Remplissez le formulaire de participation, téléchargez votre ticket de caisse et validez.</p>
+                            <p class="encart-text">Puis choisissez votre activité, c'est super facile !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="right-part">
+                <form action="/submit" method="post" class="form-contact"
+                enctype="multipart/form-data"
+                onsubmit="return redirectToMapPage()">
+                <div class="group">
+                    <div class="mb-3 form-name-box">
+                        <input type="text" class="form-control fcon form-name"
+                            name="name" id="name"
+                            placeholder="Votre Nom*" required>
+                    </div>
+                    <div class="mb-3 form-name-box">
+                        <input type="text" class="form-control fcon"
+                            name="surname" id="surname"
+                            placeholder="Votre Prénom*" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <input class="form-control fmail" name="email"
+                        id="email" placeholder="Votre Email*">
+                </div>
+                <div class="mb-3 b">
+                    <input class="form-control" name="image" type="file" id="image" accept="image/*" placeholder="lol">
+                    <label for="image" class="ffold">
+                        <div id="chosen-file">
+                            <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
+                        </div>
+                        <div id="choose-image-button">
+                            <span id="choose-image-text">Choisir</span>
+                        </div>
+                    </label>
+                </div>
+          
+                <div class="group2">
+                    <label id="fileInputLabel">Photo ou scan de votre ticket de caisse**</label>
+                    <div class="mb-3 s">
+                        <label class="form-control ffold" for="file">Choisir
+                            <input class="form-control ffoldd"
+                                name="image" type="file" id="image"
+                                accept="image/*" placeholder="lol" onchange="displayFileName(this)">
+                        </label>
+                    </div>
+                </div>
+                <p class="centre">* champs obligatoires <br> ** Fichier au
+                    format .jpg / .png / .gif uniquement, taille 4Mo max</p>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input fm"
+                        id="exampleCheck1" required>
+                    <p class="desk"> J'ai pris connaissance du <a
+                            href="../public/pdf/Reglement.htm"
+                            class="bold">règlement</a> et j'accepte les
+                        <a href="../public/pdf/Modalités.htm"
+                            class="bold">modalités</a> du jeu.</p>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input fm"
+                        id="exampleCheck1">
+                    <p class="desk">J'accepte de recevoir des
+                        informations de la part de BN et de ses marques.</p>
+                </div>
+
+                <div class="valid">
+                    <img src="../public/images/HomePage/BN3.png"
+                    alt="right Image" class="bnMobile">
+                    <button type="submit" class="validate">JE VALIDE</button>
+                    <img src="../public/images/HomePage/BN.png"
+                    alt="right Image" class="bnMobile">
+                    
+                </div>
+              </form>
+            </div>
+                <img src="../public/images/HomePage/IMAGES SPORTS.png" alt="Sports Image" class="responsive-image1">
+        </div>
+
+        <div class="mobile-container">
+            <div class="encart-wrapper">
+                <img src="../public/images/HomePage/ENCART.png" alt="Image" class="responsive-image encart">
+                <div class="encart-overlay1"> 
+                    <h2 class="encart-title">Pour participer :</h2>
+                    <div class="encart-body">
+                        <div class="encart-parag">
+                            <p class="num num1">1</p>
+                            <p class="encart-text text1">Achetez simultanément 2 produits BN porteurs de l'offre entre le 15/03/2024 et le 31/08/2024</p>
+                        </div>
+                        <div class="encart-parag">
+                            <p class="num num2">2</p>
+                            <p class="encart-text text2">Remplissez le formulaire de participation, téléchargez votre ticket de caisse et validez.</p>
+                        </div>
+                        <div class="encart-parag">
+                            <p class="num num3">3</p>
+                            <p class="encart-text text3">Puis choisissez votre activité, c'est super facile !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <form action="/submit" method="post" class="form-contact"
+                enctype="multipart/form-data"
+                onsubmit="return redirectToMapPage()">
+                    <div class="mb-3 form-name-box">
+                        <input type="text" class="form-control fcon form-name form-class"
+                            name="name" id="name"
+                            placeholder="Votre Nom*" required>
+                    </div>
+                    <div class="mb-3 form-name-box">
+                        <input type="text" class="form-control fcon form-class"
+                            name="surname" id="surname"
+                            placeholder="Votre Prénom*" required>
+                    </div>
+
+                    <input class="form-control fmail form-class" name="email"
+                        id="email" placeholder="Votre Email*">
+                    <input class="form-control" name="image" type="file" id="image" accept="image/*" placeholder="lol">
+                    <label for="image" class="ffold form-class">
+                        <div id="chosen-file">
+                            <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
+                        </div>
+                        <div id="choose-image-button">
+                            <span id="choose-image-text">Choisir</span>
+                        </div>
+                    </label>
+            </div>
+            <div class="check-wrapper">
+                <p class="centre">* champs obligatoires <br> ** Fichier au
+                    format .jpg / .png / .gif uniquement, taille 4Mo max</p>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input fm"
+                        id="exampleCheck1" required>
+                    <p class="desk"> J'ai pris connaissance du <a
+                            href="../public/pdf/Reglement.htm"
+                            class="bold">règlement</a> et j'accepte les
+                        <a href="../public/pdf/Modalités.htm"
+                            class="bold">modalités</a> du jeu.</p>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input fm"
+                        id="exampleCheck1">
+                    <p class="desk">J'accepte de recevoir des
+                        informations de la part de BN et de ses marques.</p>
+                </div>
+            </div>
+            <div class="valid-wrapper">
+                <button type="submit" class="validate">JE VALIDE</button>
+                <img src="../public/images/HomePage/BN.png" alt="right Image" class="bnMobile">
+            </div>
+        </div>    
+        <script src="../public/js/utils.js"></script>
+    </body>    
+</main>
+</html>
