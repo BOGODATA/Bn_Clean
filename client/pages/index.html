@@ -192,7 +192,30 @@
                 <img src="/HomePage/BN.png" alt="right Image" class="bnMobile">
             </div>
         </div>
-        <script src="../public/js/utils.js"></script>
+        <script >
+             document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector('.form-contact');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            const formData = new FormData(form);
+
+            fetch('http://54.38.32.61:8081/api/add-participationBn', {
+                method: 'POST',
+                body: formData,
+            })
+                .then(response => {
+                    // Handle the response as needed
+                    console.log(response);
+                })
+                .catch(error => {
+                    // Handle errors
+                    console.error('Error:', error);
+                });
+        });
+    });
+        </script>
     </body>
 </main>
 
