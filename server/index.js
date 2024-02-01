@@ -1,7 +1,7 @@
 const sequelize = require('./src/db/cnx');
 const Participation = require('./src/models/participation');
 
-require("./app")
+require("./bnclean")
 sequelize.sync()
   .then(() => {
     console.log('Modèles synchronisés avec la base de données');
