@@ -13,7 +13,8 @@ app.use('/api', participation);
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/pages/index.html'));
   });
-  app.get('/choix', (req, res) => {
+  app.get('/choix/:id', (req, res) => {
+    const participationId = req.params.id;
     res.sendFile(path.join(__dirname, '../client/pages/choix.html'));
   });
 
