@@ -1,7 +1,7 @@
 
 @media screen and (min-width:1025px) {
     main, body, html{
-        background: #773100 url(../images/HomePage/FOND.png);
+        background: #773100 url(/HomePage/FOND.png);
         background-size: 100% 110%;
         background-repeat: no-repeat;
         
