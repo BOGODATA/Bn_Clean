@@ -1,5 +1,5 @@
 const express = require('express');
-// const participation = require('./src/routes/participation'); 
+const participation = require('./src/routes/participation'); 
 const app = express();
 const PORT = 8081;
 const cors = require('cors');
