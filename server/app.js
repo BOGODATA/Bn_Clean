@@ -5,7 +5,7 @@ const PORT = 8081;
 const cors = require('cors');
 const path = require('path');
 
-app.use('/images', express.static(path.join(__dirname, '..', 'client', 'public')))
+app.use('/images', express.static(path.join(__dirname, '..', 'client', 'public',"images")))
 
 app.use(express.json());
 app.use(cors());
