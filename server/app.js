@@ -6,7 +6,7 @@ const cors = require('cors');
 
 app.use(express.json());
 app.use(cors());
-// app.use('/api', participation); 
+app.use('/api', participation); 
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
