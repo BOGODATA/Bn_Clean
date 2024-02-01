@@ -1,0 +1,316 @@
+body{
+    margin: 0%;
+    background-color: #d5e6b9;
+}
+@font-face {
+    font-family: Alasar;
+    src: url("./Fonts/Alasar-Bold.otf");
+    font-style: bold;
+}
+@font-face {
+    font-family: BakerieRough-Black;
+    src: url("./Fonts/BakerieRough-Black.otf");
+}
+@font-face {
+    font-family: BakerieRough-Bold;
+    src: url("./Fonts/BakerieRough-Bold.otf");
+    font-style: bold;
+}
+@font-face {
+    font-family: BakerieRough-Heavy;
+    src: url("./Fonts/BakerieRough-Heavy.otf");
+}
+@font-face {
+    font-family: BakerieRough-Medium;
+    src: url("./Fonts/BakerieRough-Medium.otf");
+    font-style: medium;
+}
+@font-face {
+    font-family: DomCasualStd-Bold;
+    src: url("./Fonts/DomCasualStd-Bold.otf");
+    font-style: bold;
+}
+.list_act{
+    list-style: none;
+    margin: auto;
+    display: flex; 
+    justify-content: center;
+    /*width: 100%;*/
+}
+
+.svg{
+    width: 100%; 
+    filter: drop-shadow(3px 3px 2px #151515);
+    font-family: Roboto, sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+}
+
+svg text{
+    fill: black; 
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+
+    .body{
+        
+        font-family: BakerieRough-Black, sans-serif; 
+        width: 100%;
+        margin: 0%;
+    } 
+    .map{
+        width: 100%;
+        margin-top: 5%;
+        height: 35%;
+        display: flex;
+    }
+    .carte{    
+        display: block;
+
+    }
+    .map__image{
+        padding-top: 5%;
+        width:50%;
+        margin: auto;
+        margin-left: 3%;
+        float: left;
+        display: grid;
+    }
+    .liste{
+        width:50%; 
+        margin: auto;
+        float: right; 
+    }
+    .promotion{
+        width:100%; 
+        display: flex; 
+        align-items: center;
+    }
+    .promo{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+    .map__liste{
+        width: 60%;
+        padding: 5px;
+        background-color: rgb(248 255 247);
+        stroke: black;
+        stroke-width: 4px;
+        display: flex; 
+        justify-content: center;
+        margin: auto;
+        box-shadow: 1px 1px 12px #555;
+        border-radius: 2px;
+    }
+    .select-style{
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        text-align:center;
+        align-items: center;
+        border: solid 0.5px rgb(4, 56, 4);
+        background-color: black;
+        color: white;
+        width: 400px;
+        height: 40px;
+        font-size: 20px;
+        font-family: BakerieRough-Black, sans-serif; 
+        box-shadow: inset 2px 2px 2px 1px rgb(6 34 6);
+    }
+    .select-style2{
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        text-align:center;
+        align-items: center;
+        border: solid 0.5px rgb(4, 56, 4);
+        background-color: rgb(7, 81, 7);
+        color: white;
+        width: 400px;
+        height: 40px;
+        font-size: 20px;
+        font-family: BakerieRough-Black, sans-serif; 
+        margin: 10%;
+        background-color: #004d33; 
+        color: white; 
+        width: 200px; 
+        margin-top: 10px;
+        box-shadow: inset 2px 2px 2px 1px rgb(6 34 6);
+    }
+    .navbar li a, footer li a{
+        text-decoration: none;
+        color: #004d33;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: Alasar, sans-serif;
+    }
+    .map__liste ul li h1{
+        font-size: 40px;
+        margin: 40px;
+        margin-bottom: 0%;
+        text-align: center;
+        font-family: DomCasualStd-Bold, sans-serif;
+    }
+    
+    .map__liste ul li h2{
+        margin: 0%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 50px;
+    }
+    .text h3{
+        font-size: 30px;
+    }
+    .map__liste ul li p{
+        font-size: 20px;
+        padding: 0px;
+        margin: 0%;
+    }
+        #bouton_nav{
+            display:none;
+        }
+        .selection{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        
+        .selection ul li{
+            list-style: none;
+            margin: 30px;
+        }
+        footer li{
+            list-style: none;
+            padding: 26px 30px;
+            font-size: 30px;
+        }
+        
+        footer ul{
+            min-width: 90%;
+            margin: auto;
+            display: flex; 
+            justify-content: center;
+        }
+}
+
+
+
+
+
+
+
+#svg-1 path, #svg-2 path, #svg-3 path{
+    fill: rgb(248 255 247);
+    stroke: blue;
+}
+#svg-1 path{
+    fill: rgb(248 255 247);
+    stroke: black;
+    box-shadow: 1px 1px 12px #555;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+}
+
+
+
+#svg-1 text{
+    fill: black;
+}
+
+#svg-1 #region-1:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-2:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-3:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-4:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-5:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-6:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-7:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-8:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-9:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-10:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-11:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-12:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-13:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-1:hover path{
+    fill: black
+}
+#svg-1 #region-2:hover path{
+    fill: black
+}
+#svg-1 #region-3:hover path{
+    fill: black
+}
+#svg-1 #region-4:hover path{
+    fill: black
+}
+#svg-1 #region-5:hover path{
+    fill: black
+}
+#svg-1 #region-6:hover path{
+    fill: black
+}
+#svg-1 #region-7:hover path{
+    fill: black
+}
+#svg-1 #region-8:hover path{
+    fill: black
+}
+#svg-1 #region-9:hover path{
+    fill: black
+}
+#svg-1 #region-10:hover path{
+    fill: black
+}
+#svg-1 #region-11:hover path{
+    fill: black
+}
+#svg-1 #region-12:hover path{
+    fill: black
+}
+#svg-1 #region-13:hover path{
+    fill: black
+}
+
+
+
+
+
+
+
+
+
+
+
+
