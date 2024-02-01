@@ -3,6 +3,7 @@ const participation = require('./src/routes/participation');
 const app = express();
 const PORT = 8081;
 const cors = require('cors');
+const path = require('path');
 
 app.use(express.json());
 app.use(cors());
