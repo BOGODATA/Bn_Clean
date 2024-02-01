@@ -1,0 +1,268 @@
+body,
+html,
+main {
+    background: #773100 url(../images/Choix/FOND\ 2\ TEST.png);
+    background-size: cover;
+}
+
+.above-above-body {
+    display: flex;
+
+
+    .bn {
+        width: 30vh;
+    }
+
+    .op {
+        width: 100vh;
+        position: relative;
+        left: 20vh;
+    }
+
+    .drapeau {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+.part{
+    display: none; 
+}
+.part2{
+    display: none;
+}
+.mid-container {
+    display: flex;
+    position: relative;
+    margin: 20px;
+    left: 48vh;
+    width: 110vh;
+    height: 62vh;
+    background: linear-gradient(to right, #1156a1 50%, white 50%);
+    top: 1vh;
+
+    .valid{
+        .validate{
+            display: none;
+        }
+    }
+    .bnMobile{
+        display: none;
+       
+    }
+    .left {
+        display: flex;
+        position: relative;
+        background-color: #1156a1;
+        flex-direction: column;
+
+        .carte {
+            position: relative;
+            top: 1.5vh;
+            width: 50vh;
+            height: 55vh;
+        }
+
+        .menu-deroulant {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+    }
+
+
+    .right {
+        position: relative;
+        top: 4vh;
+
+        #result {
+            color: #1156a1;
+            display: flex;
+            font-size: 1, 2rem;
+            top: -60vh;
+            text-align: left;
+            left: 57vh;
+            margin: 20px;
+            padding: 30px;
+        }
+
+
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+
+    body,
+    html,
+    main {
+        background: #773100;
+        background-size: cover;
+    }
+    .above-above-body{
+
+    .op {
+        display: none;
+    }
+
+    
+
+    .bn {
+        display: none;
+    }
+    
+   
+    .logo {
+        position: relative;
+        margin-top: 20px;
+        height: auto;
+        max-width: 80%;
+        text-align: center;
+        display: block;
+        max-height: 200px;
+        left: -90px;
+        /* width: 80vh; */
+    }
+
+    .drapeau {
+        display: block;
+        position: relative;
+        max-height: 13vh;
+
+    }}
+    .num {
+        background-color: red;
+        color: white;
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        text-align: center;
+        line-height: 1.5em;
+        margin-right: 0.5em;
+        font-weight: bold;
+
+
+    }
+    .part{
+        display: block;
+        padding-top: 50px;
+        color: #fff;
+    }
+    .mid-container {
+        display: block;
+        margin-left: -380px;
+        position: relative;
+        width: auto;
+        height: auto;
+        max-width: 85%;
+        max-height: 100%;
+        background: none;
+        top: -3vh;
+
+        .valid {
+            padding-top:20px;
+            display: flex;
+            justify-content: center;
+
+            .validate {
+                display: block;
+                border: none;
+                border-radius: 50px;
+                width: 200px;
+                height: 50px;
+                color: #1156a1 !important;
+        font-weight: bold;
+            }
+            .bnMobile{
+                display: block;
+                width: 30%;
+            }
+        }
+        .part2{
+            display: block;
+            padding-top: 20px;
+            color: #fff;
+        }
+
+        .left {
+            display: flex;
+            position: relative;
+            background-color: #1156a1;
+            flex-direction: column;
+
+            .carte {
+                position: relative;
+                top: 1.5vh;
+                width: auto;
+                height: auto;
+            }
+
+            .selection {
+                display: none;
+            }
+           
+
+
+
+        }
+
+
+        .right {
+            position: relative;
+            top: -2vh;
+            background-color: #fff;
+            width: auto;
+            height: 40vh;
+
+            #result {
+                color: #1156a1;
+                display: flex;
+                font-size: 1, 2rem;
+                top: -60vh;
+                text-align: left;
+                left: 57vh;
+                margin: 20px;
+                padding: 30px;
+            }
+
+
+        }
+
+
+    }
+    @media screen and (max-height: 700px) {
+        .mid-container {
+            margin-left: -300px;
+        }
+    }
+    @media screen and (min-height: 700px) and (max-height: 790px) {
+        .mid-container {
+            margin-left: -320px;
+        }
+    }
+    @media screen and (min-height: 790px) and (max-height: 890px) {
+        .mid-container {
+            margin-left: -370px;
+        }
+    }
+    @media screen and (min-height:890px) and (max-height: 1000px) {
+        .mid-container {
+            margin-left: -400px;
+        }
+        .above-above-body{
+
+            .logo{
+                max-width: 90%;
+            }
+
+    }
+    
+
+}}
