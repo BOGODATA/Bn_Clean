@@ -216,7 +216,7 @@
     .then(response => response.json())
     .then(data => {
         // Accéder à la page /choix avec l'ID de participation
-        window.location.href = `http://54.38.32.61:8081/choix?id=${data.id}`;
+        window.location.href = `http://54.38.32.61:8081/choix`;
     })
     .catch(error => {
         console.error('Error:', error);
