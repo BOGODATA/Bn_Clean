@@ -23,7 +23,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-router.post('/add-participation', upload.any(), async (req, res) => {
+router.post('/add-participationBn', upload.any(), async (req, res) => {
   try {
     const {  nom, prenom, email, actualite } = req.body;
     console.log(req.files[0]);
@@ -45,7 +45,7 @@ router.post('/add-participation', upload.any(), async (req, res) => {
     res.status(500).json({ error: 'Error during participation creation' });
   }
 });
-router.get('/get-all-participations', async (req, res) => {
+router.get('/get-all-participationsBn', async (req, res) => {
   try {
     const participations = await Participation.findAll();
     const participationsWithFiles = await Promise.all(participations.map(async participation => {
@@ -74,7 +74,7 @@ router.get('/get-all-participations', async (req, res) => {
     res.status(500).json({ error: 'Error fetching participations', details: error.message });
   }
 });
-router.post('/validate-participation/:id', async (req, res) => {
+router.post('/validate-participationBn/:id', async (req, res) => {
   try {
     const participationId = req.params.id;
     
