@@ -7,7 +7,9 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 app.use('/api', participation); 
-
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/pages/index.html'));
+  });
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
