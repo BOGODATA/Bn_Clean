@@ -213,19 +213,15 @@
         },
         body: JSON.stringify(data),
     })
+    .then(response => response.json())
     .then(data => {
-        fetch(`http://54.38.32.61:8081/choix/${data.id}`)
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+        // Accéder à la page /choix avec l'ID de participation
+        window.location.href = `http://54.38.32.61:8081/choix?id=${data.id}`;
     })
     .catch(error => {
         console.error('Error:', error);
     });
+   
 }
         </script>
     </body>
