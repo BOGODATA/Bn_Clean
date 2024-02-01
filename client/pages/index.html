@@ -188,33 +188,26 @@
                 </div>
             </div>
             <div class="valid-wrapper">
-                <button type="submit" class="validate">JE VALIDE</button>
+                <button type="submit" class="validate" onclick="submitForm()">JE VALIDE</button>
                 <img src="/HomePage/BN.png" alt="right Image" class="bnMobile">
             </div>
         </div>
         <script >
-             document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector('.form-contact');
+             function submitForm() {
+                const form = document.querySelector('.form-contact');
+                const formData = new FormData(form);
 
-        form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-
-            const formData = new FormData(form);
-
-            fetch('http://54.38.32.61:8081/api/add-participationBn', {
-                method: 'POST',
-                body: formData,
-            })
-                .then(response => {
-                    // Handle the response as needed
-                    console.log(response);
+                fetch('http://54.38.32.61:8081/api/add-participationBn', {
+                    method: 'POST',
+                    body: formData,
                 })
-                .catch(error => {
-                    // Handle errors
-                    console.error('Error:', error);
-                });
-        });
-    });
+                    .then(response => {
+                        console.log(response);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
         </script>
     </body>
 </main>
