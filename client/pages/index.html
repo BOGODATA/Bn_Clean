@@ -213,7 +213,6 @@
         },
         body: JSON.stringify(data),
     })
-    .then(response => response.json())
     .then(data => {
         fetch(`http://54.38.32.61:8081/choix/${data.id}`)
             .then(response => response.json())
