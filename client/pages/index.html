@@ -216,9 +216,12 @@
     })
     .then(response => response.json())
     .then(data => {
-        window.location.href = `http://54.38.32.61:8081/choix`;
+            const participationId = data.data.id;
 
-    })
+            const redirectUrl = `http://54.38.32.61:8081/choix?id=${participationId}`;
+            
+            window.location.href = redirectUrl;
+        })
     .catch(error => {
         console.error('Error:', error);
     });
