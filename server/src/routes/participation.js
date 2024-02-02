@@ -5,6 +5,12 @@ const crypto = require('crypto');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const session = require('express-session');
+app.use(session({
+  secret: 'your-secret-key',
+  resave: true,
+  saveUninitialized: true
+}));
 
 const router = express.Router();
 const storage = multer.diskStorage({
@@ -69,6 +75,8 @@ router.get('/get-all-participationsBn', async (req, res) => {
     }));
 
     res.status(200).json(participationsWithFiles);
+    req.session.participationId = participationsWithFiles.id;
+
   } catch (error) {
     console.error('Error fetching participations:', error);
     res.status(500).json({ error: 'Error fetching participations', details: error.message });
