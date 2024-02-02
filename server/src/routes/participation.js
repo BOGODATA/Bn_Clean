@@ -5,6 +5,8 @@ const crypto = require('crypto');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const app = express();
+
 const session = require('express-session');
 app.use(session({
   secret: 'your-secret-key',
