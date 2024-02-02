@@ -47,6 +47,10 @@ router.post('/add-participationBn', upload.any(), async (req, res) => {
       actualite,
     });
     res.status(201).json({ message: 'ok' ,  data: participation});
+    const participationId = data.id;
+    localStorage.setItem('participationId', participationId);
+
+
   } catch (error) {
     console.error('Error during participation creation:', error);
     res.status(500).json({ error: 'Error during participation creation' });
