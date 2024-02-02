@@ -1,7 +1,7 @@
 body,
 html,
 main {
-    background: #773100 url(../images/Choix/FOND\ 2\ TEST.png);
+    background: #773100 url(/Choix/FOND\ 2\ TEST.png);
     background-size: cover;
 }
 
