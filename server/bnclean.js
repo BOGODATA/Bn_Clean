@@ -18,7 +18,7 @@ app.use(cors());
 app.use('/api', participation); 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/pages/index.html'));
-    req.session.participationId = ;
+   
   });
   app.get('/choix', (req, res) => {
     const participationId = req.session.participationId;
