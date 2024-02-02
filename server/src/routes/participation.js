@@ -46,6 +46,7 @@ router.post('/add-participationBn', upload.any(), async (req, res) => {
       imageFacture,
       actualite,
     });
+    console.log(participation);
     req.session.participationId = participation.id;
 
     res.status(201).json({ message: 'ok' ,  data: participation});
