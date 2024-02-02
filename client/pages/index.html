@@ -214,12 +214,12 @@
         body: JSON.stringify(data),
 
     })
-    .then(response => response.json())
     .then(data => {
+        window.location.href = `http://54.38.32.61:8081/choix`;
+
             const participationId = data.data.id;
             localStorage.setItem('participationId', participationId);
 
-            window.location.href = `http://54.38.32.61:8081/choix`;
         })
     .catch(error => {
         console.error('Error:', error);
