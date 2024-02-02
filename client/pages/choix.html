@@ -203,14 +203,10 @@
         </div>
         
         <script>
-           function getQueryParam(parameter) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(parameter);
-    }
-
-    const participationId = getQueryParam('participationId');
-
+    const participationId = '{{participationId}}';
     console.log('Participation ID:', participationId);
+
+
         
             function handleRegionClick(chosenRegion) {
                 $.ajax({
