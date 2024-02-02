@@ -203,6 +203,11 @@
         </div>
         
         <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const participationId = urlParams.get('participationId');     
+            // dddddd 
+
+    console.log('Participation ID:', participationId);
             var selectedRegion = null;
         
             function handleRegionClick(chosenRegion) {
@@ -344,7 +349,7 @@ function redirectToMapPage() {
                     window.location.href = './congrats'; 
                     return false;
                 }
-
+                
 </script>
         
         

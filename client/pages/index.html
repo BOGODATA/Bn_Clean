@@ -213,11 +213,9 @@
         },
         body: JSON.stringify(data),
     })
-    .then(response => response.json())
     .then(data => {
-        // Accéder à la page /choix avec l'ID de participation
-        window.location.href = `http://54.38.32.61:8081/choix`;
-    })
+        const participationId = data.participationId;
+      window.location.href = `http://54.38.32.61:8081/choix?participationId=${participationId}`;    })
     .catch(error => {
         console.error('Error:', error);
     });
