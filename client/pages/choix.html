@@ -203,34 +203,32 @@
         </div>
         
         <script>
-            const urlParams = new URLSearchParams(window.location.search);
-            const participationId = urlParams.get('participationId');     
-            // dddddd 
+           function getQueryParam(parameter) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(parameter);
+    }
+
+    const participationId = getQueryParam('participationId');
 
     console.log('Participation ID:', participationId);
-            var selectedRegion = null;
         
             function handleRegionClick(chosenRegion) {
                 $.ajax({
                     url: "https://www.les-challenges-bn.fr/getByRegion/" + chosenRegion,
                     type: "GET",
                     success: function(data) {
-                        // Clear existing content
                         clearPartnerList();
         
-                        // Display partners by region on your page
-                        // (for example, by adding the results to an HTML element)
+                        
                         displayPartners(data);
         
-                        // Update the selected region styling
                         if (selectedRegion) {
-                            selectedRegion.style.fill = "#FDE9DE"; // Reset the fill color of the previously selected region
+                            selectedRegion.style.fill = "#FDE9DE"; 
                         }
                         selectedRegion = document.getElementById(chosenRegion);
                         document.getElementById('result').innerHTML = chosenRegion;
-                        selectedRegion.style.fill = "#E43532"; // Set the fill color of the currently selected region
+                        selectedRegion.style.fill = "#E43532"; 
         
-                        // Update the dropdown menu
                         var dropdown = document.getElementById('ma_recherche');
                         var selectedOption = dropdown.querySelector('option[selected]');
         
@@ -255,7 +253,6 @@
             });
         
             function clearPartnerList() {
-                // Clear existing partners list
                 var partnersListContainer = document.getElementById('partnersListContainer');
                 partnersListContainer.innerHTML = '';
             }

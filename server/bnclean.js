@@ -21,7 +21,6 @@ app.get('/', (req, res) => {
    
   });
   app.get('/choix', (req, res) => {
-    const participationId = req.session.participationId;
 
     res.sendFile(path.join(__dirname, '../client/pages/choix.html'));
   });
