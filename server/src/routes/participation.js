@@ -50,8 +50,7 @@ router.post('/add-participationBn', upload.any(), async (req, res) => {
     console.log('aaaaa:',email);
     console.log('bbbb:',participation.email)
 
-    const participationId = email;
-    localStorage.setItem('participationId', participationId);
+ 
 
 
   } catch (error) {

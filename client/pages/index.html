@@ -205,7 +205,8 @@
         email: email,
         imageFacture: imageFacture
     };
-
+    const participationId = email;
+    localStorage.setItem('participationId', participationId);
     fetch('http://54.38.32.61:8081/api/add-participationBn', {
         method: 'POST',
         headers: {
