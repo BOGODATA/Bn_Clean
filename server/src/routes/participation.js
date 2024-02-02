@@ -47,7 +47,7 @@ router.post('/add-participationBn', upload.any(), async (req, res) => {
       actualite,
     });
     res.status(201).json({ message: 'ok' ,  data: participation});
-    const participationId = data.id;
+    const participationId = participation.id;
     localStorage.setItem('participationId', participationId);
 
 
