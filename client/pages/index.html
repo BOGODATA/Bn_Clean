@@ -218,9 +218,7 @@
     .then(data => {
             const participationId = data.data.id;
 
-            const redirectUrl = `http://54.38.32.61:8081/choix?id=${participationId}`;
-            
-            window.location.href = redirectUrl;
+            window.location.href = `http://54.38.32.61:8081/choix/${participationId}`;
         })
     .catch(error => {
         console.error('Error:', error);
