@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../db/cnx');
 
 
-const Partner = sequelize.define('Partenaire', {
+const Partner = sequelize.define('partner', {
     nom: {
         type: DataTypes.STRING,
         allowNull: false,
