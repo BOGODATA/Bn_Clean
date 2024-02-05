@@ -3,21 +3,31 @@ const sequelize = require('../db/cnx');
 
 
 const Partner = sequelize.define('Partenaire', {
-    name: {
-        type: String,
-        required: true,
-    },
+    nom: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
     region: {
-        type: String,
-        required: true,
+        type: DataTypes.STRING,
+        allowNull: false,
     },
-    desc: {type: String,required:true},
-    telephone: { type: String, required: true },
-    type: { type: String, required: true },
-    email: { type: String, required: true },
-    cp: { type: String, required: true },
-    address: { type: String, required: true },
-    ville: { type: String, required: true },
-    site: { type: String, required: true },
+    desc: { 
+         type: DataTypes.STRING,
+        allowNull: false,},
+    telephone: {   
+        type: DataTypes.STRING,
+        allowNull: false, },
+    type: {   type: DataTypes.STRING,
+        allowNull: false, },
+    email: {   type: DataTypes.STRING,
+        allowNull: false, },
+    cp: {   type: DataTypes.STRING,
+        allowNull: false, },
+    address: {   type: DataTypes.STRING,
+        allowNull: false, },
+    ville: {   type: DataTypes.STRING,
+        allowNull: false, },
+    site: {   type: DataTypes.STRING,
+        allowNull: false,},
 });
 module.exports = Partner;
