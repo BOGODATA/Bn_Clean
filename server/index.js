@@ -1,5 +1,6 @@
 const sequelize = require('./src/db/cnx');
 const Participation = require('./src/models/participation');
+const Partner =require('./src/models/partner')
 
 require("./bnclean")
 sequelize.sync()
