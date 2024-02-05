@@ -1,5 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../db/cnx');
+const Partner = require('./partner'); 
 
 const Participation = sequelize.define('Participation', {
   date: {
@@ -39,6 +40,12 @@ const Participation = sequelize.define('Participation', {
     allowNull: true,
     defaultValue:false,
   },
+  partenaireId: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+    defaultValue: false,
+  },
 });
+Participation.belongsTo(Partner, { foreignKey: 'partenaireId' });
 
 module.exports = Participation;
