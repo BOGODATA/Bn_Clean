@@ -43,7 +43,7 @@ const Participation = sequelize.define('Participation', {
   partenaireId: {
     type: DataTypes.INTEGER,
     allowNull: true,
-    defaultValue: false,
+    defaultValue: null,
   },
 });
 Participation.belongsTo(Partner, { foreignKey: 'partenaireId' });
