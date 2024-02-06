@@ -263,6 +263,18 @@ svg text{
 #svg-1 #region-13:hover text{
     fill: rgb(248 255 247);
 }
+#svg-1 #region-14:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-15:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-16:hover text{
+    fill: rgb(248 255 247);
+}
+#svg-1 #region-17:hover text{
+    fill: rgb(248 255 247);
+}
 #svg-1 #region-1:hover path{
     fill: black
 }
@@ -300,6 +312,18 @@ svg text{
     fill: black
 }
 #svg-1 #region-13:hover path{
+    fill: black
+}
+#svg-1 #region-14:hover path{
+    fill: black
+}
+#svg-1 #region-15:hover path{
+    fill: black
+}
+#svg-1 #region-16:hover path{
+    fill: black
+}
+#svg-1 #region-17:hover path{
     fill: black
 }
 
