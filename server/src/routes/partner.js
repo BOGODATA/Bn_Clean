@@ -7,8 +7,6 @@ router.post('/import-csv', async (req, res) => {
     const csvFilePath = 'path/to/your/csv/file.csv';
   
     try {
-      const connection = await mysql.createConnection(dbConfig);
-      
       fs.createReadStream(csvFilePath)
         .pipe(csv())
         .on('data', async (row) => {

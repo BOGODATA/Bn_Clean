@@ -212,7 +212,7 @@ console.log('Participation ID:', participationId);
     
             function handleRegionClick(chosenRegion) {
                 $.ajax({
-                    url: "https://www.les-challenges-bn.fr/getByRegion/" + chosenRegion,
+                    url: "http://54.38.32.61:8081/api/partenaires/" + chosenRegion,
                     type: "GET",
                     success: function(data) {
                         clearPartnerList();
