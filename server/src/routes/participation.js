@@ -78,6 +78,7 @@ router.get('/get-all-participationsBn', async (req, res) => {
         },
         actualite: participation.actualite,
         etat:participation.etat,
+        partenaireId:null
       };
     }));
 
