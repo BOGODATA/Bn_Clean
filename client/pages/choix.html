@@ -367,11 +367,13 @@
                 website.setAttribute('id', 'partner_website');
                 website.textContent = partner.site;
 
-               
+                const detailsTitle = document.createElement('p');
+                detailsTitle.setAttribute('id', 'details_title');
+                detailsTitle.textContent = '';
 
                 const details = document.createElement('p');
                 details.setAttribute('id', 'partner_details');
-                details.textContent = "Details"+partner.desc;
+                details.textContent = "Details:"+partner.desc;
 
                 const goToPartnerButton = document.createElement('button');
                 goToPartnerButton.setAttribute('id', 'partner_button');
