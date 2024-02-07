@@ -3,6 +3,7 @@ const Partner = require('../models/partner');
 const router = express.Router();
 const app = express();
 const fs = require('fs');
+const csv = require('csv-parser');
 
 
 router.post('/import-csv', async (req, res) => {
