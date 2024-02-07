@@ -4,7 +4,15 @@ main {
     background: #773100 url(/Choix/FOND\ 2\ TEST.png);
     background-size: cover;
 }
-
+#partnersListContainer{
+    overflow: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
 .above-above-body {
     display: flex;
 
