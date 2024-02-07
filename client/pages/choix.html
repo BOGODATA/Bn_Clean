@@ -267,9 +267,7 @@
 
                         displayPartners(data);
 
-                        // if (selectedRegion) {
-                        //     selectedRegion.style.fill = "#FDE9DE";
-                        // }
+                     
                         selectedRegion = document.getElementById(chosenRegion);
                         console.log(chosenRegion)
                         const region = document.createElement('h1');
@@ -317,7 +315,7 @@ for (var i = 0; i < partners.partenaires.length; i++) {
             }
 
             function createPartnerListItem(partner) {
-                const listItem = document.createElement('div');
+                const listItem = document.createElement('li');
                 listItem.setAttribute('class', 'activity_option');
                 listItem.setAttribute('activity_type', partner.activity);
 
