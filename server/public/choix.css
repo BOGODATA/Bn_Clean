@@ -6,13 +6,15 @@ main {
 }
 #partnersListContainer{
     overflow: auto;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    width: 120%;
+    width: 50vh;
     padding-left: 2vh;
     margin-left: 80px;
     padding-right: 2vh;
+    font-family: Righteous;
+
 }
 #partner_name{
     font-size: 4vh;
@@ -20,6 +22,8 @@ main {
     margin-bottom: 0;
     text-transform: uppercase;
     font-family: Righteous;
+    margin-left: 60px;
+    text-align: center;
 }
 #partner_phone {
     color: #E43532;
@@ -127,6 +131,8 @@ main {
             left: 57vh;
             margin: 20px;
             padding: 30px;
+            font-family: Righteous;
+
         }
 
 
