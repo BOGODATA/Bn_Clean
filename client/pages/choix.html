@@ -341,7 +341,7 @@
                 activity.setAttribute('id', 'activity_type');
                 activity.textContent = partner.type;
 
-                const address = document.createElement('h2');
+                const address = document.createElement('h4');
                 address.setAttribute('id', 'activity_type');
                 address.textContent = partner.address;
 
@@ -359,7 +359,7 @@
                 const between = document.createElement('span');
                 between.textContent = ' | ';
                 between.setAttribute('id', 'between');
-                
+
                 const phone = document.createElement('span');
                 phone.setAttribute('id', 'partner_phone');
                 phone.textContent = partner.telephone;
@@ -389,8 +389,9 @@
 
                 listItem.appendChild(name);
                 listItem.appendChild(activity);
-                listItem.appendChild(codepostal);
                 listItem.appendChild(address);
+                listItem.appendChild(codepostal);
+                listItem.appendChild(phone);
                 listItem.appendChild(email);
                 listItem.appendChild(between);
                 listItem.appendChild(website);
