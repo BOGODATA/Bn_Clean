@@ -362,18 +362,16 @@
                 const phone = document.createElement('span');
                 address.setAttribute('id', 'partner_phone');
                 address.textContent = partner.telephone;
-                
+
                 const website = document.createElement('a');
                 website.setAttribute('id', 'partner_website');
-                website.textContent = 'Site internet';
+                website.textContent = partner.site;
 
-                const detailsTitle = document.createElement('p');
-                detailsTitle.setAttribute('id', 'details_title');
-                detailsTitle.textContent = 'Détails :';
+               
 
                 const details = document.createElement('p');
                 details.setAttribute('id', 'partner_details');
-                details.textContent = partner.desc;
+                details.textContent = "Details"+partner.desc;
 
                 const goToPartnerButton = document.createElement('button');
                 goToPartnerButton.setAttribute('id', 'partner_button');
