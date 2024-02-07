@@ -4,15 +4,15 @@ const router = express.Router();
 const app = express();
 
 router.post('/import-csv', async (req, res) => {
-    const csvFilePath = 'path/to/your/csv/file.csv';
+    const csvFilePath = '../../public/liste.csv';
   
     try {
       fs.createReadStream(csvFilePath)
         .pipe(csv())
         .on('data', async (row) => {
-          const { name, email, region } = row;
+          const { name, email, region,ville,type,address,cp,telephone,site,desc } = row;
   
-          await connection.execute('INSERT INTO partners (name, email, region) VALUES (?, ?, ?)', [name, email, region]);
+          await connection.execute('INSERT INTO partners (nom, email, region,ville,type,address,cp,telephone,site,desc) VALUES (?, ?, ?)', [name, email, region,ville,type,address,cp,telephone,site,desc]);
         })
         .on('end', () => {
           connection.end(); 
