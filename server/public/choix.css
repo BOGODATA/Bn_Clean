@@ -11,6 +11,7 @@ main {
     flex-direction: column;
     width: 95%;
     padding-left: 2vh;
+    margin-left: 80px;
     padding-right: 2vh;
 }
 .above-above-body {

@@ -237,7 +237,7 @@
             </div>
 
             <div class="right">
-                <div id="result"></div>
+                <h1 id="result"></h1>
                 <ul id="partnersListContainer"></ul>
 
             </div>
@@ -271,6 +271,9 @@
                             selectedRegion.style.fill = "#FDE9DE";
                         }
                         selectedRegion = document.getElementById(chosenRegion);
+                        const region = document.createElement('h1');
+                region.setAttribute('id', 'result');
+                region.textContent = chosenRegion;
                         document.getElementById('result').innerHTML = chosenRegion;
                         selectedRegion.style.fill = "#E43532";
 
