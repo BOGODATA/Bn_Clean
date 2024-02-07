@@ -305,15 +305,12 @@
             function displayPartners(partners) {
                 clearPartnerList();
 console.log(partners)
-                if (Array.isArray(partners)) {
-                    partners.forEach(function (partner) {
-                        console.log(partner)
-                        createPartnerListItem(partner);
-                    });
-                } else if (typeof partners === 'object' && partners !== null) {
-                    console.log('on est laaa')
-                    createPartnerListItem(partners);
-                }
+for (var i = 0; i < partners.length; i++) {
+        var partner = partners[i];
+        console.log(partner);
+        createPartnerListItem(partner);
+    }
+                
             }
 
             function createPartnerListItem(partner) {
