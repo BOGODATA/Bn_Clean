@@ -341,9 +341,9 @@
                 activity.setAttribute('id', 'activity_type');
                 activity.textContent = partner.type;
 
-                const activityy = document.createElement('h2');
-                activityy.setAttribute('id', 'activity_type');
-                activityy.textContent = partner.address;
+                const address = document.createElement('h2');
+                address.setAttribute('id', 'activity_type');
+                address.textContent = partner.address;
 
                 const codepostal = document.createElement('p');
                 codepostal.setAttribute('id', 'partner_cp');
@@ -359,6 +359,7 @@
                 const between = document.createElement('span');
                 between.textContent = ' | ';
                 between.setAttribute('id', 'between');
+                
                 const phone = document.createElement('span');
                 phone.setAttribute('id', 'partner_phone');
                 phone.textContent = partner.telephone;
