@@ -3,9 +3,9 @@ const Partner = require('../models/partner');
 const router = express.Router();
 const app = express();
 const fs = require('fs');
-
+import '../../public/'
 router.post('/import-csv', async (req, res) => {
-    const csvFilePath = '../../public/liste.csv';
+    const csvFilePath = '/liste.csv';
   
     try {
       fs.createReadStream(csvFilePath)
