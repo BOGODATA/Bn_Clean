@@ -6,7 +6,7 @@ const fs = require('fs');
 
 
 router.post('/import-csv', async (req, res) => {
-    const csvFilePath = '/liste.csv';
+    const csvFilePath = './liste.csv';
   
     try {
       fs.createReadStream(csvFilePath)
