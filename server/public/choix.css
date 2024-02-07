@@ -6,13 +6,40 @@ main {
 }
 #partnersListContainer{
     overflow: auto;
-    height: 90vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 120%;
     padding-left: 2vh;
     margin-left: 80px;
     padding-right: 2vh;
+}
+#partner_name{
+    font-size: 4vh;
+    color: #773100;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+#partner_phone {
+    color: #E43532;
+}
+#partner_cp {
+    font-weight: bold;
+}
+#partner_address {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#partner_details {
+    color: #773100; 
+    margin-top: 2vh;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#activity_type{
+    font-size: 3vh;
+    color: #773100; 
+    margin-bottom: 1rem;
 }
 .above-above-body {
     display: flex;
