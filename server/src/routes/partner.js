@@ -4,10 +4,11 @@ const router = express.Router();
 const app = express();
 const fs = require('fs');
 const csv = require('csv-parser');
+const path = require('path');
 
 
 router.post('/import-csv', async (req, res) => {
-    const csvFilePath = './liste.csv';
+  const csvFilePath = path.join(__dirname, 'liste.csv');
   
     try {
       fs.createReadStream(csvFilePath)
