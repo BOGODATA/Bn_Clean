@@ -304,13 +304,12 @@
 
             function displayPartners(partners) {
                 clearPartnerList();
-console.log(partners)
-for (var i = 0; i < partners.length; i++) {
-        var partner = partners[i];
+console.log(partners.partenaires)
+for (var i = 0; i < partners.partenaires.length; i++) {
+        var partner = partners.partenaires[i];
         console.log(partner);
         createPartnerListItem(partner);
     }
-                
             }
 
             function createPartnerListItem(partner) {
