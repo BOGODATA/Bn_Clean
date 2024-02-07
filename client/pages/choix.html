@@ -307,6 +307,7 @@
 console.log(partners)
                 if (Array.isArray(partners)) {
                     partners.forEach(function (partner) {
+                        console.log(partner)
                         createPartnerListItem(partner);
                     });
                 } else if (typeof partners === 'object' && partners !== null) {
@@ -321,7 +322,7 @@ console.log(partners)
 
                 const name = document.createElement('h1');
                 name.setAttribute('id', 'partner_name');
-                name.textContent = partner.name;
+                name.textContent = partner.nom;
 
                 const activity = document.createElement('h2');
                 activity.setAttribute('id', 'activity_type');
