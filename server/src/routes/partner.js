@@ -2,6 +2,7 @@ const express = require('express');
 const Partner = require('../models/partner');
 const router = express.Router();
 const app = express();
+const fs = require('fs');
 
 router.post('/import-csv', async (req, res) => {
     const csvFilePath = '../../public/liste.csv';
