@@ -22,8 +22,6 @@ main {
     margin-bottom: 0;
     text-transform: uppercase;
     font-family: Righteous;
-    margin-left: 60px;
-    text-align: center;
 }
 #partner_phone {
     color: #E43532;
@@ -132,6 +130,9 @@ main {
             margin: 20px;
             padding: 30px;
             font-family: Righteous;
+            margin-left: 50px;
+            text-align: center;
+
 
         }
 
