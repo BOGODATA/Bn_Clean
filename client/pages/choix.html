@@ -303,17 +303,13 @@
             }
 
             function displayPartners(partners) {
-                // Clear existing content
                 clearPartnerList();
-
-                // Check if the response is an array or a single object
+console.log(partners)
                 if (Array.isArray(partners)) {
-                    // Iterate over the partners data and create list items
                     partners.forEach(function (partner) {
                         createPartnerListItem(partner);
                     });
                 } else if (typeof partners === 'object' && partners !== null) {
-                    // If the response is a single object, create a single list item
                     createPartnerListItem(partners);
                 }
             }
