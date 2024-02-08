@@ -198,41 +198,39 @@
             <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>        </div>
         <script>
     
-            function submitForm() {
-                const nom = document.getElementById('nom').value;
-                const prenom = document.getElementById('surname').value;
-                const email = document.getElementById('email').value;
-                const imageFacture = document.getElementById('image').files[0];
+    function submitForm() {
+        const nom = document.getElementById('nom').value;
+        const prenom = document.getElementById('surname').value;
+        const email = document.getElementById('email').value;
+        const imageFactureInput = document.getElementById('image');
+        const imageFacture = imageFactureInput.files[0];
 
-                const data = {
-                    nom: nom,
-                    prenom: prenom,
-                    email: email,
-                    imageFacture: imageFacture
-                };
+        const formData = new FormData();
+        formData.append('nom', nom);
+        formData.append('prenom', prenom);
+        formData.append('email', email);
+        formData.append('imageFacture', imageFacture);
+
+        const participationId = email;
+        localStorage.setItem('participationId', participationId);
+
+        fetch('/api/add-participationBn', {
+            method: 'POST',
+            body: formData,
+            mode: 'no-cors',
+        })
+            .then(response => response.json())
+            .then(data => {
                 const participationId = email;
                 localStorage.setItem('participationId', participationId);
-                fetch('/api/add-participationBn', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data),
-                    mode: 'no-cors',
-                })
-                    .then(data => {
-                        const participationId = email;
-                        localStorage.setItem('participationId', participationId);
-                        console.log("on est laaaa")
-                        window.location.replce = `/choix`
-                        localStorage.setItem('participationId', participationId);
-
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                    });
-
-            }
+                console.log("on est laaaa")
+                window.location.replace = `/choix`;
+                localStorage.setItem('participationId', participationId);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
         </script>
     </body>
 </main>
