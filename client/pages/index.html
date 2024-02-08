@@ -114,7 +114,7 @@
 
                     <div class="valid">
                         <img src="/HomePage/BN3.png" alt="right Image" class="bnMobile">
-                        <button type="submit" class="validate">JE VALIDE</button>
+                        <button type="submit" class="validate" >JE VALIDE</button>
                         <img src="/HomePage/BN.png" alt="right Image" class="bnMobile">
 
                     </div>
@@ -188,15 +188,14 @@
                 </div>
             </div>
             <div class="valid-wrapper">
-                <button type="submit" class="validate">JE VALIDE</button>
+                <button type="submit" class="validate" >JE VALIDE</button>
                 <img src="/HomePage/BN.png" alt="right Image" class="bnMobile">
             </div>
         </div>
         <div class="footer">
 
             <a href="/mod.pdf">Modalités</a>
-            <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>
-        </div>
+            <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>        </div>
         <script>
             function submitForm() {
                 const nom = document.getElementById('nom').value;
@@ -218,10 +217,11 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify(data),
-                }).then(response => response.json())
-                 .then(data => {
+                })
+                    .then(data => {
                         const participationId = email;
                         localStorage.setItem('participationId', participationId);
+                        console.log("on est laaaa")
                         window.location.href = `/choix`
                         localStorage.setItem('participationId', participationId);
 
