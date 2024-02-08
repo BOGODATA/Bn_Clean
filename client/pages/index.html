@@ -147,7 +147,7 @@
                 </div>
             </div>
             <div class="form-wrapper">
-                <form  action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
+                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
                     onsubmit="return redirectToMapPage()">
                     <div class="mb-3 form-name-box">
                         <input type="text" class="form-control fcon form-name form-class" name="name" id="name"
@@ -195,44 +195,44 @@
         <div class="footer">
 
             <p>modalité</p>
-            <p>contact : <a href="contact@les-challenges-bn.fr"></a>contact@les-challenges-bn.fr</p>
+            <a href="contact@les-challenges-bn.fr">contactez-nous</a>
         </div>
         <script>
-           function submitForm() {
-    const nom = document.getElementById('nom').value;
-    const prenom = document.getElementById('surname').value;
-    const email = document.getElementById('email').value;
-    const imageFacture = document.getElementById('image').files[0];
+            function submitForm() {
+                const nom = document.getElementById('nom').value;
+                const prenom = document.getElementById('surname').value;
+                const email = document.getElementById('email').value;
+                const imageFacture = document.getElementById('image').files[0];
 
-    const data = {
-        nom: nom,
-        prenom: prenom,
-        email: email,
-        imageFacture: imageFacture
-    };
-    const participationId = email;
-    localStorage.setItem('participationId', participationId);
-    fetch('https://les-challenges-bn.fr/api/add-participationBn', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-    .then(data => {
-        const participationId = email;
-    localStorage.setItem('participationId', participationId);
-        console.log(data)
+                const data = {
+                    nom: nom,
+                    prenom: prenom,
+                    email: email,
+                    imageFacture: imageFacture
+                };
+                const participationId = email;
+                localStorage.setItem('participationId', participationId);
+                fetch('https://les-challenges-bn.fr/api/add-participationBn', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                    .then(data => {
+                        const participationId = email;
+                        localStorage.setItem('participationId', participationId);
+                        console.log(data)
 
-        window.location.href = `https://les-challenges-bn.fr/choix`
-            localStorage.setItem('participationId', participationId);
+                        window.location.href = `https://les-challenges-bn.fr/choix`
+                        localStorage.setItem('participationId', participationId);
 
-        })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-   
-}
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+
+            }
         </script>
     </body>
 </main>
