@@ -74,7 +74,7 @@
                         <input class="form-control fmail" name="email" id="email" placeholder="Votre Email*">
                     </div>
                     <div class="mb-3 b">
-                        <input class="form-control" name="imageFacture" type="file" id="imageFacture" placeholder="lol">
+                        <input class="form-control" name="imageFacture" type="file" id="image" placeholder="lol">
                         <label for="image" class="ffold">
                             <div id="chosen-file">
                                 <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
@@ -89,7 +89,7 @@
                         <label id="fileInputLabel">Photo ou scan de votre ticket de caisse**</label>
                         <div class="mb-3 s">
                             <label class="form-control ffold" for="file">Choisir
-                                <input class="form-control ffoldd" name="image" type="file" id="imageFacture" accept="image/*"
+                                <input class="form-control ffoldd" name="image" type="file" id="image" accept="image/*"
                                     placeholder="lol" onchange="displayFileName(this)">
                             </label>
                         </div>
@@ -158,7 +158,7 @@
                     </div>
 
                     <input class="form-control fmail form-class" name="email" id="email" placeholder="Votre Email*">
-                    <input class="form-control" name="image" type="file" id="imageFacture" accept="image/*" placeholder="lol">
+                    <input class="form-control" name="image" type="file" id="image" accept="image/*" placeholder="lol">
                     <label for="image" class="ffold form-class">
                         <div id="chosen-file">
                             <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
@@ -200,7 +200,7 @@
                 const nom = document.getElementById('nom').value;
                 const prenom = document.getElementById('surname').value;
                 const email = document.getElementById('email').value;
-                const imageFacture = document.getElementById('imageFacture').files[0];
+                const imageFacture = document.getElementById('image').files[0];
 
                 const data = {
                     nom: nom,
