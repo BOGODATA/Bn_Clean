@@ -111,4 +111,36 @@ router.post('/validate-participationBn/:id', async (req, res) => {
     res.status(500).json({ error: 'Error during participation validation', details: error.message });
   }
 });
+const storedEmail = localStorage.getItem('participationId');
+
+router.post('/assign-partner/:email', async (req, res) => {
+  try {
+    const { partenaireId } = req.body;
+
+    const participation = await Participation.findOne({
+      where: {
+        email: storedEmail,
+      },
+    });
+
+    if (!participation) {
+      return res.status(404).json({ error: 'Participation not found for the given email' });
+    }
+
+    const updatedParticipation = await Participation.update({ partenaireId: partenaireId }, {
+      where: {
+        id: participation.id,
+      },
+    });
+
+    if (updatedParticipation[0] === 0) {
+      return res.status(500).json({ error: 'Error updating partenaireId for the participation' });
+    }
+
+    res.status(200).json({ message: 'PartenaireId updated successfully' });
+  } catch (error) {
+    console.error('Error during updating partenaireId:', error);
+    res.status(500).json({ error: 'Error during updating partenaireId', details: error.message });
+  }
+});
 module.exports = router;

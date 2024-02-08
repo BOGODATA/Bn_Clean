@@ -1,29 +1,37 @@
-
 @media screen and (min-width:1025px) {
-    main, body, html{
+
+    main,
+    body,
+    html {
         background: #773100 url(/HomePage/FOND.png);
         background-size: 100% 110%;
         background-repeat: no-repeat;
-        
+
         /* background-attachment: fixed;*/
-    } 
+    }
 
     .head {
         background-color: #773100;
         height: 12vh;
     }
-.footer{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    a{
-        text-decoration: none;
-        color:#fff ;
-        font-family: Righteous;
-    font-weight: bolder;    }
-    
-}
+
+    .footer {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Righteous;
+            font-weight: bolder;
+            margin: 80px;
+
+        }
+
+    }
+
     .above-above-body {
         display: flex;
         justify-content: space-between;
@@ -68,7 +76,7 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        
+
         .bn {
             text-align: left;
             height: auto;
@@ -76,7 +84,7 @@
             position: relative;
             left: 5vw;
         }
-        
+
         .txt {
             text-align: center;
             width: 70vh;
@@ -143,7 +151,7 @@
         display: none;
     }
 
-    .group2{
+    .group2 {
         display: none;
     }
 
@@ -205,7 +213,7 @@
         z-index: -1;
     }
 
-    
+
 
 }
 
@@ -217,55 +225,55 @@
     padding: 20px;
     position: relative;
     top: -5vh;
-  }
+}
 
-  .left-bns {
+.left-bns {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  
 
-  
-    .group {
-        display: flex;
-        position: relative;
-        flex-direction: row;
 
-        .form-name-box {
-            width: 50%;
-        }
 
-        .fcon {
-            border:#0056b3 solid 2px !important;
-            border-radius: 0 !important;
-            height: 5vh;
-        }
+.group {
+    display: flex;
+    position: relative;
+    flex-direction: row;
 
-        .form-name {
-            border-right: 0 !important;
-        }
-
+    .form-name-box {
+        width: 50%;
     }
 
-    .fmail {
+    .fcon {
         border: #0056b3 solid 2px !important;
         border-radius: 0 !important;
         height: 5vh;
     }
 
-  .bnseul {
-    margin-left: -12vh;
-  }
+    .form-name {
+        border-right: 0 !important;
+    }
 
-  .bn3 {
+}
+
+.fmail {
+    border: #0056b3 solid 2px !important;
+    border-radius: 0 !important;
+    height: 5vh;
+}
+
+.bnseul {
+    margin-left: -12vh;
+}
+
+.bn3 {
     position: absolute;
     left: -20vh;
     bottom: -10vh;
     width: 23vh;
-  }
+}
 
-  .left-part {
+.left-part {
     flex: 1;
     padding: 0;
     width: fit-content;
@@ -299,9 +307,9 @@
         margin-bottom: 9.5vh;
     }
 
-  }
-  
-  .right-part {
+}
+
+.right-part {
     flex: 1;
     padding: 0;
     margin-top: 14vh;
@@ -311,35 +319,35 @@
         border-radius: 0 !important;
         border: #0056b3 solid 2px !important;
     }
-    
+
     .desk {
         font-size: 1.5vh;
         color: #fff;
-        
+
         .bold {
             color: #fff;
         }
-        
+
     }
-    
+
     form {
         max-width: 460px;
         margin: 0 auto;
     }
-    
+
     .centre {
         font-size: 1.5vh;
         color: #fff;
     }
 
 }
-  
+
 .responsive-image {
     max-width: 100%;
     height: auto;
 }
 
-  
+
 .responsive-image1 {
     margin-left: 8vh;
     margin-right: -25vh;
@@ -348,8 +356,8 @@
 }
 
 
-  
-  
+
+
 label,
 input[type="text"],
 input[type="email"],
@@ -360,25 +368,25 @@ input[type="submit"] {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-  
+
 input[type="submit"] {
     background-color: #007bff;
     color: white;
     cursor: pointer;
 }
-  
+
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
 
 
-.valid{
+.valid {
     position: relative;
     display: flex;
     justify-content: center;
 
-    .validate{
+    .validate {
         border-radius: 50px;
         border-color: #0056b3;
         border: none;
@@ -391,14 +399,16 @@ input[type="submit"]:hover {
         backdrop-filter: blur(20px);
     }
 }
-  
+
 
 
 
 
 @media screen and (max-width:1024px) {
 
-    body, html, main {
+    body,
+    html,
+    main {
         background: #773100;
         background-size: cover;
         margin-bottom: -1px;
@@ -551,7 +561,7 @@ input[type="submit"]:hover {
                 }
 
             }
-        
+
         }
 
         .form-wrapper {
@@ -563,14 +573,14 @@ input[type="submit"]:hover {
                 display: flex;
                 flex-direction: row;
             }
-        
+
             #chosen-file {
                 width: 75%;
                 height: 100%;
                 display: flex;
                 align-items: center;
             }
-        
+
             #choose-image-button {
                 position: relative;
                 background-color: #1156a1 !important;
@@ -582,22 +592,22 @@ input[type="submit"]:hover {
                 align-items: center;
                 justify-content: center;
             }
-        
+
             #choose-image-button:hover {
                 cursor: pointer;
             }
-        
+
             #choose-image-text {
                 font-family: 'Ubuntu Condensed';
                 font-size: 2vh;
             }
-        
+
             #choose-file-placeholder {
                 margin-left: 1.5vh;
                 font-size: 1.4vh;
                 color: dimgray;
             }
-        
+
             #image {
                 width: 0.1px;
                 height: 0.1px;
@@ -648,11 +658,11 @@ input[type="submit"]:hover {
         .valid-wrapper {
             margin-left: 7%;
             padding-bottom: 4vh;
-    
+
             .bnMobile {
                 width: 40%;
             }
-    
+
         }
 
     }
@@ -671,7 +681,7 @@ input[type="submit"]:hover {
 
     .sportMobile {
         height: auto;
-        padding-top:20px ;
+        padding-top: 20px;
         max-height: 40vh;
         position: relative;
         padding-left: 70px;
@@ -721,7 +731,7 @@ input[type="submit"]:hover {
                 height: 40px;
                 color: #fff;
                 display: inline-block;
-                padding-top:-0px;
+                padding-top: -0px;
                 cursor: pointer;
                 background-color: #1156a1;
                 font-weight: 600;
@@ -758,12 +768,12 @@ input[type="submit"]:hover {
         .left {
             .encart {
                 display: block;
-                width:auto;
+                width: auto;
                 max-height: 45vh;
                 height: auto;
                 position: relative;
-                padding-left:20px ;
-                padding-right:10px ;
+                padding-left: 20px;
+                padding-right: 10px;
             }
         }
     }
@@ -779,10 +789,10 @@ input[type="submit"]:hover {
         display: none;
     }
 
-    .b{
+    .b {
         display: none;
     }
-    
+
     .encart-overlay2 {
         padding-left: 15px;
         position: absolute;
@@ -823,25 +833,28 @@ input[type="submit"]:hover {
 
     .encart-overlay1 {
         font-weight: bold;
-        padding-top:20px;
+        padding-top: 20px;
         padding-left: 30px;
         padding-bottom: 12px;
         text-align: left;
 
 
     }
-    .centre{
+
+    .centre {
         font-weight: bold;
 
     }
-    .bnMobile{
+
+    .bnMobile {
         width: 30%;
     }
-    .form-check{
+
+    .form-check {
         font-weight: bold;
     }
 
-    .validate{
+    .validate {
         border-radius: 50px;
         border-color: #0056b3;
         border: none;
@@ -853,7 +866,7 @@ input[type="submit"]:hover {
         box-shadow: -10px 10px 24px 0px rgba(0, 0, 0, 0.40);
         backdrop-filter: blur(20px);
     }
-    
+
 }
 
 @media screen and (max-width:300px) {
@@ -875,7 +888,7 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width:1024px) and (min-width:500px) {
-    
+
     .above-body-mobile {
         .mobiletitle-over {
             font-size: 3vh;
