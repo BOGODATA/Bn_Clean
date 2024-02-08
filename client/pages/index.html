@@ -57,8 +57,7 @@
 
 
             <div class="right-part">
-                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
-                    onsubmit="return redirectToMapPage()">
+                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data">
                     <div class="group">
                         <div class="mb-3 form-name-box">
                             <input type="text" class="form-control fcon form-name" name="nom" id="nom"
@@ -147,7 +146,7 @@
             </div>
             <div class="form-wrapper">
                 <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
-                    onsubmit="return redirectToMapPage()">
+                    >
                     <div class="mb-3 form-name-box">
                         <input type="text" class="form-control fcon form-name form-class" name="nom" id="nom"
                             placeholder="Votre Nom*" required>
@@ -201,6 +200,10 @@
                 const prenom = document.getElementById('surname').value;
                 const email = document.getElementById('email').value;
                 const imageFacture = document.getElementById('image').files[0];
+console.log(nom)
+console.log(prenom)
+console.log(email)
+
 
                 const data = {
                     nom: nom,
