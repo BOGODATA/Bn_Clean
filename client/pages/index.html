@@ -159,7 +159,7 @@
                     </div>
 
                     <input class="form-control fmail form-class" name="email" id="email" placeholder="Votre Email*">
-                    <input class="form-control" name="imageFacture" type="file" id="image" accept="image/*" placeholder="lol" onchange="displayFileName(this)">
+                    <input class="form-control" name="image" type="file" id="image" accept="image/*" placeholder="lol" onchange="displayFileName(this)">
                     <label for="image" class="ffold form-class">
                         <div id="chosen-file">
                             <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
@@ -218,6 +218,7 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify(data),
+                    mode: 'no-cors',
                 })
                     .then(data => {
                         const participationId = email;
