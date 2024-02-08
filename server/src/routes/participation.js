@@ -111,11 +111,11 @@ router.post('/validate-participationBn/:id', async (req, res) => {
     res.status(500).json({ error: 'Error during participation validation', details: error.message });
   }
 });
-const storedEmail = localStorage.getItem('participationId');
 
 router.post('/assign-partner/:email', async (req, res) => {
   try {
     const { partenaireId } = req.body;
+    const email = decodeURIComponent(req.params.email);
 
     const participation = await Participation.findOne({
       where: {
