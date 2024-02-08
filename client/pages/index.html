@@ -209,7 +209,8 @@
                     email: email,
                     imageFacture: imageFacture
                 };
-                localStorage.setItem('email', email);
+                const participationId = email;
+                localStorage.setItem('participationId', participationId);
                 fetch('https://les-challenges-bn.fr/api/add-participationBn', {
                     method: 'POST',
                     headers: {
@@ -218,11 +219,12 @@
                     body: JSON.stringify(data),
                 })
                     .then(data => {
-                        localStorage.setItem('email', email);
+                        const participationId = email;
+                        localStorage.setItem('participationId', participationId);
                         console.log(data)
 
                         window.location.href = `https://les-challenges-bn.fr/choix`
-                        localStorage.setItem('email', email);
+                        localStorage.setItem('participationId', participationId);
 
                     })
                     .catch(error => {
