@@ -12,7 +12,18 @@
         background-color: #773100;
         height: 12vh;
     }
-
+.footer{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        color:#fff ;
+        font-family: Righteous;
+    font-weight: bolder;    }
+    
+}
     .above-above-body {
         display: flex;
         justify-content: space-between;
