@@ -57,7 +57,8 @@
 
 
             <div class="right-part">
-                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data">
+                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
+                    >
                     <div class="group">
                         <div class="mb-3 form-name-box">
                             <input type="text" class="form-control fcon form-name" name="nom" id="nom"
@@ -203,7 +204,7 @@
 console.log(nom)
 console.log(prenom)
 console.log(email)
-
+console.log(imageFacture)
 
                 const data = {
                     nom: nom,
@@ -226,7 +227,7 @@ console.log(email)
                         localStorage.setItem('participationId', participationId);
                         console.log(data)
 
-                        //window.location.href = `https://les-challenges-bn.fr/choix`
+                        window.location.href = `https://les-challenges-bn.fr/choix`
                         localStorage.setItem('participationId', participationId);
 
                     })
