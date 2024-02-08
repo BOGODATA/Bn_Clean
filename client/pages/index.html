@@ -197,41 +197,36 @@
             <a href="/mod.pdf">Modalités</a>
             <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>        </div>
         <script>
-            function submitForm() {
-                const nom = document.getElementById('nom').value;
-                const prenom = document.getElementById('surname').value;
-                const email = document.getElementById('email').value;
-                const imageFacture = document.getElementById('image').files[0];
+           function submitForm() {
+    const nom = document.getElementById('nom').value;
+    const prenom = document.getElementById('surname').value;
+    const email = document.getElementById('email').value;
+    const imageFacture = document.getElementById('image').files[0];
 
-                const data = {
-                    nom: nom,
-                    prenom: prenom,
-                    email: email,
-                    imageFacture: imageFacture
-                };
-                const participationId = email;
-                localStorage.setItem('participationId', participationId);
-                fetch('https://les-challenges-bn.fr/api/add-participationBn', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data),
-                })
-                    .then(data => {
-                        const participationId = email;
-                        localStorage.setItem('participationId', participationId);
-                        console.log(data)
+    const formData = new FormData();
+    formData.append('nom', nom);
+    formData.append('prenom', prenom);
+    formData.append('email', email);
+    formData.append('imageFacture', imageFacture);
 
-                        window.location.href = `https://les-challenges-bn.fr/choix`
-                        localStorage.setItem('participationId', participationId);
+    const participationId = email;
+    localStorage.setItem('participationId', participationId);
 
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                    });
+    fetch('https://les-challenges-bn.fr/api/add-participationBn', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        const participationId = email;
+        localStorage.setItem('participationId', participationId);
+        window.location.href = `https://les-challenges-bn.fr/choix`;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
 
-            }
         </script>
     </body>
 </main>
