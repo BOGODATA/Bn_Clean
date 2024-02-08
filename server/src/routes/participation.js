@@ -119,7 +119,7 @@ router.post('/assign-partner/:email', async (req, res) => {
 
     const participation = await Participation.findOne({
       where: {
-        email: storedEmail,
+        email: email,
       },
     });
 
