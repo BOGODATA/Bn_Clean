@@ -280,7 +280,6 @@
 
 
                         displayPartners(data);
-                        partnersLoaded = true;
 
                         selectedRegion = document.getElementById(chosenRegion);
                         console.log(chosenRegion)
@@ -379,8 +378,9 @@
                 const goToPartnerButton = document.createElement('button');
                 goToPartnerButton.setAttribute('id', 'partner_button');
                 goToPartnerButton.textContent = 'Choisir cette activité';
-                goToPartnerButton.addEventListener('click', redirectToMapPage(partner.id));
-
+                goToPartnerButton.addEventListener('click', function() {
+    redirectToMapPage(partner.id);
+});
 
                 const line = document.createElement('hr');
                 line.setAttribute('id', 'partner_line');
@@ -405,8 +405,6 @@
             }
 
             function redirectToMapPage(partenaireId) {
-                if (partnersLoaded) {
-
     const participationId = localStorage.getItem('participationId');
 
     $.ajax({
@@ -425,7 +423,7 @@
     });
 
     return false;
-}}
+}
 
         </script>
 
