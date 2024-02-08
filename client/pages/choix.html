@@ -280,7 +280,7 @@
 
 
                         displayPartners(data);
-
+                        partnersLoaded = true;
 
                         selectedRegion = document.getElementById(chosenRegion);
                         console.log(chosenRegion)
@@ -405,6 +405,8 @@
             }
 
             function redirectToMapPage(partenaireId) {
+                if (partnersLoaded) {
+
     const participationId = localStorage.getItem('participationId');
 
     $.ajax({
@@ -423,7 +425,7 @@
     });
 
     return false;
-}
+}}
 
         </script>
 
