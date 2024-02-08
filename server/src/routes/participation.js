@@ -54,7 +54,6 @@ router.post('/add-participationBn', upload.any(), async (req, res) => {
 
 
   } catch (error) {
-    console.error('Error during participation creation:', error);
     res.status(500).json({ error: 'Error during participation creation' });
   }
 });
