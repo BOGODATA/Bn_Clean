@@ -379,7 +379,7 @@
                 const goToPartnerButton = document.createElement('button');
                 goToPartnerButton.setAttribute('id', 'partner_button');
                 goToPartnerButton.textContent = 'Choisir cette activité';
-                goToPartnerButton.addEventListener('click', redirectToMapPage);
+                goToPartnerButton.addEventListener('click', redirectToMapPage(partner.id));
 
 
                 const line = document.createElement('hr');
@@ -404,10 +404,26 @@
                 document.getElementById('partnersListContainer').appendChild(listItem);
             }
 
-            function redirectToMapPage() {
-                window.location.href = './congrats';
-                return false;
-            }
+            function redirectToMapPage(partenaireId) {
+    const participationId = localStorage.getItem('participationId');
+
+    $.ajax({
+        url: 'https://les-challenges-bn.fr/api/assign-partner/' + participationId,
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ partenaireId: partenaireId }),
+        success: function (response) {
+            console.log(response);
+
+            window.location.href = './congrats';
+        },
+        error: function (error) {
+            console.error('Error during API request:', error);
+        }
+    });
+
+    return false;
+}
 
         </script>
 
