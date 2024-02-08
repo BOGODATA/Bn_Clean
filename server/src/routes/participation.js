@@ -48,8 +48,7 @@ router.post('/add-participationBn', upload.any(), async (req, res) => {
     });
     res.status(201).json({ message: 'ok' ,  data: participation});
 
-    console.log('aaaaa:',email);
-    console.log('bbbb:',participation.email)
+    
 
  
 
