@@ -46,15 +46,17 @@ router.post('/add-participationBn', upload.any(), async (req, res) => {
       imageFacture,
       actualite,
     });
-    res.status(201)
+    res.status(201).json({ message: 'ok' ,  data: participation});
 
-    
+    console.log('aaaaa:',email);
+    console.log('bbbb:',participation.email)
 
  
 
 
   } catch (error) {
-    res.status(500)
+    console.error('Error during participation creation:', error);
+    res.status(500).json({ error: 'Error during participation creation' });
   }
 });
 router.get('/get-all-participationsBn', async (req, res) => {
