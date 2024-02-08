@@ -160,14 +160,14 @@
 
                     <input class="form-control fmail form-class" name="email" id="email" placeholder="Votre Email*">
                     <input class="form-control" name="imageFacture" type="file" id="image" accept="image/*" placeholder="lol" >
-                    <label for="image" class="ffold form-class">
+                    <!-- <label for="image" class="ffold form-class">
                         <div id="chosen-file">
                             <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
                         </div>
                         <div id="choose-image-button">
                             <span id="choose-image-text">Choisir</span>
                         </div>
-                    </label>
+                    </label> -->
             </div>
             <div class="check-wrapper">
                 <p class="centre">* champs obligatoires <br> ** Fichier au
@@ -204,7 +204,7 @@
         const email = document.getElementById('email').value;
         const imageFactureInput = document.getElementById('image');
         const imageFacture = imageFactureInput.files[0];
-
+console.log(imageFacture)
         const formData = new FormData();
         formData.append('nom', nom);
         formData.append('prenom', prenom);
@@ -217,7 +217,6 @@
         fetch('/api/add-participationBn', {
             method: 'POST',
             body: formData,
-            mode: 'no-cors',
         })
             .then(response => response.json())
             .then(data => {
