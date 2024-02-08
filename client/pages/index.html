@@ -58,8 +58,8 @@
 
 
             <div class="right-part">
-                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
-                    >
+                <form action="/api/add-participationBn" method="post" class="form-contact"
+                    enctype="multipart/form-data">
                     <div class="group">
                         <div class="mb-3 form-name-box">
                             <input type="text" class="form-control fcon form-name" name="nom" id="nom"
@@ -147,66 +147,89 @@
                 </div>
             </div>
             <div class="form-wrapper">
-                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
-                    >
-                    <div class="mb-3 form-name-box">
-                        <input type="text" class="form-control fcon form-name form-class" name="nom" id="nom"
-                            placeholder="Votre Nom*" required>
-                    </div>
-                    <div class="mb-3 form-name-box">
-                        <input type="text" class="form-control fcon form-class" name="prenom" id="surname"
-                            placeholder="Votre Prénom*" required>
+                <form action="/api/add-participationBn" method="post" class="form-contact"
+                    enctype="multipart/form-data">
+                    <div class="group">
+                        <div class="mb-3 form-name-box">
+                            <input type="text" class="form-control fcon form-name" name="nom" id="nom"
+                                placeholder="Votre Nom*" required>
+                        </div>
+                        <div class="mb-3 form-name-box">
+                            <input type="text" class="form-control fcon" name="prenom" id="surname"
+                                placeholder="Votre Prénom*" required>
+                        </div>
                     </div>
 
-                    <input class="form-control fmail form-class" name="email" id="email" placeholder="Votre Email*">
-                    <input class="form-control" name="imageFacture" type="file" id="image" placeholder="lol">
-                                        <label for="image" class="ffold form-class">
-                        <div id="chosen-file">
-                            <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
+                    <div class="mb-3">
+                        <input class="form-control fmail" name="email" id="email" placeholder="Votre Email*">
+                    </div>
+                    <div class="mb-3 b">
+                        <input class="form-control" name="imageFacture" type="file" id="image" placeholder="lol">
+                        <label for="image" class="ffold">
+                            <div id="chosen-file">
+                                <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
+                            </div>
+                            <div id="choose-image-button">
+                                <span id="choose-image-text">Choisir</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="group2">
+                        <label id="fileInputLabel">Photo ou scan de votre ticket de caisse**</label>
+                        <div class="mb-3 s">
+                            <label class="form-control ffold" for="file">Choisir
+                                <input class="form-control ffoldd" name="image" type="file" id="image" accept="image/*"
+                                    placeholder="lol" onchange="displayFileName(this)">
+                            </label>
                         </div>
-                        <div id="choose-image-button">
-                            <span id="choose-image-text">Choisir</span>
-                        </div>
-                    </label>
+                    </div>
+                    <p class="centre">* champs obligatoires <br> ** Fichier au
+                        format .jpg / .png / .gif uniquement, taille 4Mo max</p>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input fm" id="exampleCheck1" required>
+                        <p class="desk"> J'ai pris connaissance du <a href="../public/pdf/Reglement.htm"
+                                class="bold">règlement</a> et j'accepte les
+                            <a href="../public/pdf/Modalités.htm" class="bold">modalités</a> du jeu.
+                        </p>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input fm" id="exampleCheck1">
+                        <p class="desk">J'accepte de recevoir des
+                            informations de la part de BN et de ses marques.</p>
+                    </div>
+
+                    <div class="valid">
+                        <img src="/HomePage/BN3.png" alt="right Image" class="bnMobile">
+                        <button type="submit" class="validate" onclick="submitForm()">JE VALIDE</button>
+                        <img src="/HomePage/BN.png" alt="right Image" class="bnMobile">
+
+                    </div>
                 </form>
             </div>
-            <div class="check-wrapper">
-                <p class="centre">* champs obligatoires <br> ** Fichier au
-                    format .jpg / .png / .gif uniquement, taille 4Mo max</p>
 
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input fm" id="exampleCheck1" required>
-                    <p class="desk"> J'ai pris connaissance du <a href="../public/pdf/Reglement.htm"
-                            class="bold">règlement</a> et j'accepte les
-                        <a href="../public/pdf/Modalités.htm" class="bold">modalités</a> du jeu.
-                    </p>
-                </div>
 
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input fm" id="exampleCheck1">
-                    <p class="desk">J'accepte de recevoir des
-                        informations de la part de BN et de ses marques.</p>
-                </div>
-            </div>
-            <div class="valid-wrapper">
-                <button type="submit" class="validate" onclick="submitForm()">JE VALIDE</button>
-                <img src="/HomePage/BN.png" alt="right Image" class="bnMobile">
-            </div>
+
+        </div>
+
         </div>
         <div class="footer">
 
             <a href="/mod.pdf">Modalités</a>
-            <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>        </div>
+            <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>
+        </div>
         <script>
             function submitForm() {
                 const nom = document.getElementById('nom').value;
                 const prenom = document.getElementById('surname').value;
                 const email = document.getElementById('email').value;
                 const imageFacture = document.getElementById('image').files[0];
-console.log(nom)
-console.log(prenom)
-console.log(email)
-console.log(imageFacture)
+                console.log(nom)
+                console.log(prenom)
+                console.log(email)
+                console.log(imageFacture)
 
                 const data = {
                     nom: nom,
