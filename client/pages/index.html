@@ -208,6 +208,7 @@
                     email: email,
                     imageFacture: imageFacture
                 };
+                console.log(data)
                 const participationId = email;
                 localStorage.setItem('participationId', participationId);
                 fetch('https://les-challenges-bn.fr/api/add-participationBn', {
