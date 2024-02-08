@@ -197,7 +197,9 @@
             <a href="/mod.pdf">Modalités</a>
             <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>        </div>
         <script>
-           function submitForm() {
+          function submitForm(event) {
+    event.preventDefault(); // Prevent the default form submission
+
     const nom = document.getElementById('nom').value;
     const prenom = document.getElementById('surname').value;
     const email = document.getElementById('email').value;
@@ -226,6 +228,8 @@
         console.error('Error:', error);
     });
 }
+
+document.querySelector('.form-contact').addEventListener('submit', submitForm);
 
         </script>
     </body>
