@@ -57,8 +57,8 @@
 
 
             <div class="right-part">
-                <form action="/api/add-participationBn" method="post" class="form-contact"
-                    enctype="multipart/form-data">
+                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
+                    >
                     <div class="group">
                         <div class="mb-3 form-name-box">
                             <input type="text" class="form-control fcon form-name" name="nom" id="nom"
@@ -90,8 +90,8 @@
                         <label id="fileInputLabel">Photo ou scan de votre ticket de caisse**</label>
                         <div class="mb-3 s">
                             <label class="form-control ffold" for="file">Choisir
-                                <input class="form-control" name="imageFacture" type="file" id="image" accept="image/*"
-                            placeholder="lol">
+                                <input class="form-control ffoldd" name="image" type="file" id="image" accept="image/*"
+                                    placeholder="lol" onchange="displayFileName(this)">
                             </label>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
 
                     <div class="valid">
                         <img src="/HomePage/BN3.png" alt="right Image" class="bnMobile">
-                        <button type="submit" class="validate">JE VALIDE</button>
+                        <button type="submit" class="validate" >JE VALIDE</button>
                         <img src="/HomePage/BN.png" alt="right Image" class="bnMobile">
 
                     </div>
@@ -147,8 +147,8 @@
                 </div>
             </div>
             <div class="form-wrapper">
-                <form action="/api/add-participationBn" method="post" class="form-contact"
-                    enctype="multipart/form-data">
+                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
+                    >
                     <div class="mb-3 form-name-box">
                         <input type="text" class="form-control fcon form-name form-class" name="name" id="name"
                             placeholder="Votre Nom*" required>
@@ -159,8 +159,8 @@
                     </div>
 
                     <input class="form-control fmail form-class" name="email" id="email" placeholder="Votre Email*">
-                    <input class="form-control" name="imageFacture" type="file" id="image" accept="image/*" placeholder="lol"> 
-                        <label for="image" class="ffold form-class">
+                    <input class="form-control" name="image" type="file" id="image" accept="image/*" placeholder="lol" onchange="displayFileName(this)">
+                    <label for="image" class="ffold form-class">
                         <div id="chosen-file">
                             <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
                         </div>
@@ -188,17 +188,16 @@
                 </div>
             </div>
             <div class="valid-wrapper">
-                <button type="submit" class="validate">JE VALIDE</button>
+                <button type="submit" class="validate" >JE VALIDE</button>
                 <img src="/HomePage/BN.png" alt="right Image" class="bnMobile">
             </div>
         </div>
         <div class="footer">
 
             <a href="/mod.pdf">Modalités</a>
-            <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>
-        </div>
+            <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>        </div>
         <script>
-
+    
             function submitForm() {
                 const nom = document.getElementById('nom').value;
                 const prenom = document.getElementById('surname').value;
@@ -225,7 +224,7 @@
                         const participationId = email;
                         localStorage.setItem('participationId', participationId);
                         console.log("on est laaaa")
-                        window.location.replace = `/choix`
+                        window.location.replce = `/choix`
                         localStorage.setItem('participationId', participationId);
 
                     })
