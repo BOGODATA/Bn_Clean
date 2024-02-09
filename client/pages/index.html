@@ -227,14 +227,13 @@
                         })
                         .catch(error => {
                             console.error('Error:', error);
-                        });
-                }
-                else {
-                    const nom = document.getElementById('nom2').value;
-                    const prenom = document.getElementById('surname2').value;
-                    const email = document.getElementById('email2').value;
-                    const imageFacture = document.getElementById('image2').files[0];
-                    const data = new FormData();
+                        });}
+                        else{
+                            const nom = document.getElementById('nom2').value;
+                const prenom = document.getElementById('surname2').value;
+                const email = document.getElementById('email2').value;
+                const imageFacture = document.getElementById('image2').files[0];
+                 const data = new FormData();
                     data.append('nom', nom);
                     data.append('prenom', prenom);
                     data.append('email', email);
@@ -254,10 +253,9 @@
                         })
                         .catch(error => {
                             console.error('Error:', error);
-                        });
-                }
+                        });}
 
-            }
+                        }
                 
         </script>
 
