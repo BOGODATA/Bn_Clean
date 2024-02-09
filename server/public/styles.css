@@ -445,9 +445,9 @@ input[type="submit"]:hover {
 
     }
 
-    .above-body {
+    /* .above-body {
         display: none;
-    }
+    } */
 
     .above-body-mobile {
         display: flex;
