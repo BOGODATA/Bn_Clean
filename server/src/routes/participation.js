@@ -115,7 +115,7 @@ router.post('/validate-participationBn/:id', async (req, res) => {
 router.post('/assign-partner/:email', async (req, res) => {
   try {
     const { partenaireId } = req.body;
-    const email = decodeURIComponent(req.params.email);
+    const email = decodeURIComponent(req.params.participationId);
 
     const participation = await Participation.findOne({
       where: {
