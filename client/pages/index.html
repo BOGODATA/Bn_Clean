@@ -10,6 +10,8 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 
 <header class="head">
@@ -57,8 +59,8 @@
 
 
             <div class="right-part">
-                <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
-                    >
+                <form action="/api/add-participationBn" method="post" class="form-contact"
+                    enctype="multipart/form-data">
                     <div class="group">
                         <div class="mb-3 form-name-box">
                             <input type="text" class="form-control fcon form-name" name="nom" id="nom"
@@ -159,7 +161,7 @@
 
                     <input class="form-control fmail form-class" name="email" id="email" placeholder="Votre Email*">
                     <input class="form-control" name="imageFacture" type="file" id="image" placeholder="lol">
-                                        <label for="image" class="ffold form-class">
+                    <label for="image" class="ffold form-class">
                         <div id="chosen-file">
                             <span id="choose-file-placeholder">Photo ou scan de votre ticket de caisse**</span>
                         </div>
@@ -194,44 +196,39 @@
         <div class="footer">
 
             <a href="/mod.pdf">Modalités</a>
-            <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>        </div>
+            <a href="mailto:contact@les-challenges-bn.fr">Contactez-nous</a>
+        </div>
         <script>
             function submitForm() {
                 const nom = document.getElementById('nom').value;
                 const prenom = document.getElementById('surname').value;
                 const email = document.getElementById('email').value;
                 const imageFacture = document.getElementById('image').files[0];
-
-                const data = {
-                    nom: nom,
-                    prenom: prenom,
-                    email: email,
-                    imageFacture: imageFacture
-                };
+        
+                const data = new FormData();
+                data.append('nom', nom);
+                data.append('prenom', prenom);
+                data.append('email', email);
+                data.append('imageFacture', imageFacture);
+        
                 const participationId = email;
                 localStorage.setItem('participationId', participationId);
-                fetch('https://les-challenges-bn.fr/api/add-participationBn', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data),
-                })
-                    .then(data => {
+        
+                axios.post('https://les-challenges-bn.fr/api/add-participationBn', data)
+                    .then(response => {
                         const participationId = email;
                         localStorage.setItem('participationId', participationId);
-                        console.log(data)
-
-                        window.location.href = `https://les-challenges-bn.fr/choix`
+                        console.log(response.data);
+        
+                        window.location.href = `https://les-challenges-bn.fr/choix`;
                         localStorage.setItem('participationId', participationId);
-
                     })
                     .catch(error => {
                         console.error('Error:', error);
                     });
-
             }
         </script>
+        
     </body>
 </main>
 
