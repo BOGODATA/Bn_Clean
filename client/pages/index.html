@@ -91,7 +91,7 @@
                         <label id="fileInputLabel">Photo ou scan de votre ticket de caisse**</label>
                         <div class="mb-3 s">
                             <label class="form-control ffold" for="file">Choisir
-                                <input class="form-control ffoldd" name="image" type="file" id="image" accept="image/*"
+                                <input class="form-control ffoldd" name="imageFacture" type="file" id="image" accept="image/*"
                                     placeholder="lol" onchange="displayFileName(this)">
                             </label>
                         </div>
@@ -204,7 +204,7 @@
                 const prenom = document.getElementById('surname').value;
                 const email = document.getElementById('email').value;
                 const imageFacture = document.getElementById('image').files[0];
-
+console.log(imageFacture)
                 if (nom !== null && prenom !== null && email !== null && imageFacture !== null) {
 
                     const data = new FormData();
@@ -234,6 +234,8 @@
                 const email = document.getElementById('email2').value;
                 const imageFacture = document.getElementById('image2').files[0];
                 console.log(imageFacture);
+                if (imageFacture) {
+
                  const data = new FormData();
                     data.append('nom', nom);
                     data.append('prenom', prenom);
@@ -255,7 +257,10 @@
                         .catch(error => {
                             console.error('Error:', error);
                         });}
-
+                        else{
+                            console.log("select image")
+                        }
+                    }
                         }
                 
         </script>
