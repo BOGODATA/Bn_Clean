@@ -35,7 +35,7 @@ router.post('/add-participationBn', upload.any(), async (req, res) => {
   try {
     const {  nom, prenom, email, actualite } = req.body;
     console.log(req.files[0]);
-    const imageFacture = req.files[0].fieldname;
+    const imageFacture = req.files[0].filename;
     console.log(imageFacture);
 
     const participation = await Participation.create({
