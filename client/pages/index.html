@@ -240,7 +240,7 @@
                         data.append('nom', nom);
                         data.append('prenom', prenom);
                         data.append('email', email);
-                        data.append('imageFacture', imageFacture);
+                        data.append('imageFacture', document.getElementsById('image2').files[0]);
 
                         const participationId = email;
                         localStorage.setItem('participationId', participationId);
