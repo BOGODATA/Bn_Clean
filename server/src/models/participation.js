@@ -19,9 +19,7 @@ const Participation = sequelize.define('Participation', {
   email: {
     type: DataTypes.STRING,
     allowNull: false,
-    validate: {
-      isEmail: true, 
-    },
+   
   },
 
   imageFacture: {
