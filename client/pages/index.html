@@ -239,8 +239,8 @@
                         const data = new FormData();
                         data.append('nom', nom);
                         data.append('prenom', prenom);
-                        data.append('email', "aaa@aaa.aa");
-                        data.append('imageFacture', document.getElementsById('image2').files[0]);
+                        data.append('email', email);
+                        data.append('imageFacture', document.getElementById('image2').files[0]);
 
                         const participationId = email;
                         localStorage.setItem('participationId', participationId);
