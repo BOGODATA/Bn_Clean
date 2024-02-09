@@ -244,24 +244,24 @@
 
                         const participationId = email;
                         localStorage.setItem('participationId', participationId);
-                        document.querySelector('.validate').setAttribute('disabled', 'true');
 
-                        axios.post('https://les-challenges-bn.fr/api/add-participationBn', data)
-                            .then(response => {
-                                const participationId = email;
-                                localStorage.setItem('participationId', participationId);
-                                console.log(response.data);
+                        console.log(data)
+                //         axios.post('https://les-challenges-bn.fr/api/add-participationBn', data)
+                //             .then(response => {
+                //                 const participationId = email;
+                //                 localStorage.setItem('participationId', participationId);
+                //                 console.log(response.data);
 
-                                window.location.href = `https://les-challenges-bn.fr/choix`;
-                            })
-                            .catch(error => {
-                                console.error('Error:', error);
-                            });
-                    }
-                    else {
-                        console.log("select image")
-                    }
-                }
+                //                 window.location.href = `https://les-challenges-bn.fr/choix`;
+                //             })
+                //             .catch(error => {
+                //                 console.error('Error:', error);
+                //             });
+                //     }
+                //     else {
+                //         console.log("select image")
+                //     }
+                // }
             }
 
         </script>
