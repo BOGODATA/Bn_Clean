@@ -150,6 +150,35 @@ main {
 
 
 }
+@media screen and (max-width:1300px) and (min-width:850px) {
+    #partnersListContainer{
+        overflow: auto;
+        height: 38vh;
+        display: flex;
+        flex-direction: column;
+        width: 50vh;
+        padding-left: 2vh;
+        margin-left: 40px;
+        padding-right: 2vh;
+        font-family: Righteous;
+        font-size: 10px;
+    
+    }
+    #result {
+        color: #1156a1;
+        display: flex;
+        font-size: 5vh;
+        top: -60vh;
+        text-align: left;
+        left: 57vh;
+        margin: 20px;
+        padding: 30px;
+        
+    }
+    #partner_details{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
 
 @media screen and (max-width:600px) {
 
