@@ -204,31 +204,31 @@
                 const prenom = document.getElementById('surname').value;
                 const email = document.getElementById('email').value;
                 const imageFacture = document.getElementById('image').files[0];
-        
+
                 const data = new FormData();
                 data.append('nom', nom);
                 data.append('prenom', prenom);
                 data.append('email', email);
                 data.append('imageFacture', imageFacture);
-        
+
                 const participationId = email;
                 localStorage.setItem('participationId', participationId);
-        
+                document.querySelector('.validate').setAttribute('disabled', 'true');
+
                 axios.post('https://les-challenges-bn.fr/api/add-participationBn', data)
                     .then(response => {
-                        const participationId = email;
+                        const participationId = response.data.email;
                         localStorage.setItem('participationId', participationId);
                         console.log(response.data);
-        
+
                         window.location.href = `https://les-challenges-bn.fr/choix`;
-                        localStorage.setItem('participationId', participationId);
                     })
                     .catch(error => {
                         console.error('Error:', error);
                     });
             }
         </script>
-        
+
     </body>
 </main>
 
