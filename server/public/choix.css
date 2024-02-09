@@ -283,6 +283,22 @@ main {
                 left: 57vh;
                 margin: 20px;
                 padding: 30px;
+                #partnersListContainer{
+                    overflow: auto;
+                    height: 20vh;
+                    display: flex;
+                    flex-direction: column;
+                    width: 40vh;
+                    padding-left: 2vh;
+                    font-family: Righteous;
+                    #partner_name{
+                        font-size: 2vh;
+                        color: #773100;
+                        margin-bottom: 0;
+                        text-transform: uppercase;
+                        font-family: Righteous;
+                    }
+                }
             }
 
 
