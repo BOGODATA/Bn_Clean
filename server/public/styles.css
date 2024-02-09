@@ -406,7 +406,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width:1024px) {
 
-    /* body,
+    body,
     html,
     main {
         background: #773100;
@@ -521,7 +521,7 @@ input[type="submit"]:hover {
                             width: 210px;
                         }
 
-                    } */
+                    }
 
                     /* .numbers-container {
                         width: 3.5vh;
@@ -557,12 +557,12 @@ input[type="submit"]:hover {
                     .text3 {
                         width: 220px;
                     } */
-/* 
+
                 }
 
             }
 
-        } */
+        }
 
         .form-wrapper {
 
