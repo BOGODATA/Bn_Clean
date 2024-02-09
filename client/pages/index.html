@@ -91,8 +91,8 @@
                         <label id="fileInputLabel">Photo ou scan de votre ticket de caisse**</label>
                         <div class="mb-3 s">
                             <label class="form-control ffold" for="file">Choisir
-                                <input class="form-control ffoldd" name="imageFacture" type="file" id="image" accept="image/*"
-                                    placeholder="lol" onchange="displayFileName(this)">
+                                <input class="form-control ffoldd" name="imageFacture" type="file" id="image"
+                                    accept="image/*" placeholder="lol" onchange="displayFileName(this)">
                             </label>
                         </div>
                     </div>
@@ -200,13 +200,12 @@
         </div>
         <script>
             function submitForm() {
-                const nom = document.getElementById('nom').value;
+              
+                if (document.getElementById('nom').value !==null) {
+                    const nom = document.getElementById('nom').value;
                 const prenom = document.getElementById('surname').value;
                 const email = document.getElementById('email').value;
                 const imageFacture = document.getElementById('image').files[0];
-console.log(imageFacture)
-                if (nom !== null && prenom !== null && email !== null && imageFacture !== null) {
-
                     const data = new FormData();
                     data.append('nom', nom);
                     data.append('prenom', prenom);
@@ -227,42 +226,44 @@ console.log(imageFacture)
                         })
                         .catch(error => {
                             console.error('Error:', error);
-                        });}
-                        else{
-                            const nom = document.getElementById('nom2').value;
-                const prenom = document.getElementById('surname2').value;
-                const email = document.getElementById('email2').value;
-                const imageFacture = document.getElementById('image2').files[0];
-                console.log(imageFacture);
-                if (imageFacture) {
+                        });
+                }
+                else {
+                    const nom = document.getElementById('nom2').value;
+                    const prenom = document.getElementById('surname2').value;
+                    const email = document.getElementById('email2').value;
+                    const imageFacture = document.getElementById('image2').files[0];
+                    console.log(imageFacture);
+                    if (imageFacture) {
 
-                 const data = new FormData();
-                    data.append('nom', nom);
-                    data.append('prenom', prenom);
-                    data.append('email', email);
-                    data.append('imageFacture', imageFacture);
+                        const data = new FormData();
+                        data.append('nom', nom);
+                        data.append('prenom', prenom);
+                        data.append('email', email);
+                        data.append('imageFacture', imageFacture);
 
-                    const participationId = email;
-                    localStorage.setItem('participationId', participationId);
-                    document.querySelector('.validate').setAttribute('disabled', 'true');
+                        const participationId = email;
+                        localStorage.setItem('participationId', participationId);
+                        document.querySelector('.validate').setAttribute('disabled', 'true');
 
-                    axios.post('https://les-challenges-bn.fr/api/add-participationBn', data)
-                        .then(response => {
-                            const participationId = email;
-                            localStorage.setItem('participationId', participationId);
-                            console.log(response.data);
+                        axios.post('https://les-challenges-bn.fr/api/add-participationBn', data)
+                            .then(response => {
+                                const participationId = email;
+                                localStorage.setItem('participationId', participationId);
+                                console.log(response.data);
 
-                            window.location.href = `https://les-challenges-bn.fr/choix`;
-                        })
-                        .catch(error => {
-                            console.error('Error:', error);
-                        });}
-                        else{
-                            console.log("select image")
-                        }
+                                window.location.href = `https://les-challenges-bn.fr/choix`;
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                            });
                     }
-                        }
-                
+                    else {
+                        console.log("select image")
+                    }
+                }
+            }
+
         </script>
 
     </body>
