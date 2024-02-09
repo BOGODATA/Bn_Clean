@@ -91,7 +91,7 @@
                         <label id="fileInputLabel">Photo ou scan de votre ticket de caisse**</label>
                         <div class="mb-3 s">
                             <label class="form-control ffold" for="file">Choisir
-                                <input class="form-control ffoldd" name="imageFacture" type="file" id="image"
+                                <input class="form-control ffoldd" name="imageFacture" type="file" id="image3"
                                     accept="image/*" placeholder="lol" onchange="displayFileName(this)">
                             </label>
                         </div>
@@ -149,7 +149,7 @@
             </div>
             <div class="form-wrapper">
                 <form action="/api/add-participationBn" method="post" class="form-contact" enctype="multipart/form-data"
-                    onsubmit="return redirectToMapPage()">
+                    >
                     <div class="mb-3 form-name-box">
                         <input type="text" class="form-control fcon form-name form-class" name="nom" id="nom2"
                             placeholder="Votre Nom*" required>
@@ -214,7 +214,7 @@
 
                     const participationId = email;
                     localStorage.setItem('participationId', participationId);
-                    document.querySelector('.validate').setAttribute('disabled', 'true');
+                    document.querySelector('.validate').removeAttribute('disabled');
 
                     axios.post('https://les-challenges-bn.fr/api/add-participationBn', data)
                         .then(response => {
@@ -239,11 +239,12 @@
                         data.append('nom', nom);
                         data.append('prenom', prenom);
                         data.append('email', email);
-                        data.append('imageFacture', document.getElementById('image2').files[0]);
+                        data.append('imageFacture', imageFacture);
 
                         const participationId = email;
                         localStorage.setItem('participationId', participationId);
                         document.querySelector('.validate').setAttribute('disabled', 'true');
+            document.querySelector('.validate').removeAttribute('disabled');
 
                         axios.post('https://les-challenges-bn.fr/api/add-participationBn', data)
                             .then(response => {
