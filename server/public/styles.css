@@ -625,6 +625,11 @@ input[type="submit"]:hover {
                 width: 86%;
                 margin-left: 7%;
             }
+            #image{
+                border-radius: 0;
+                width: 86%;
+                margin-left: 7%;
+            }
         }
 
         .check-wrapper {
