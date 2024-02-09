@@ -59,7 +59,7 @@
 
 
             <div class="right-part">
-                <form  class="form-contact"
+                <form action="/api/add-participationBn" method="post" class="form-contact"
                     enctype="multipart/form-data">
                     <div class="group">
                         <div class="mb-3 form-name-box">
@@ -149,7 +149,7 @@
             </div>
             <div class="form-wrapper">
                 <form  class="form-contact" enctype="multipart/form-data"
-                    >
+                onsubmit="return submitForm()">
                     <div class="mb-3 form-name-box">
                         <input type="text" class="form-control fcon form-name form-class" name="nom" id="nom2"
                             placeholder="Votre Nom*" required>
@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="valid-wrapper">
-                <button type="submit" class="validate" onclick="submitForm()">JE VALIDE</button>
+                <button type="submit" class="validate">JE VALIDE</button>
                 <img src="/HomePage/BN.png" alt="right Image" class="bnMobile">
             </div>
         </div>
