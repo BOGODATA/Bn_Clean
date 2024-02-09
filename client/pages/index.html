@@ -217,7 +217,7 @@
 
                 axios.post('https://les-challenges-bn.fr/api/add-participationBn', data)
                     .then(response => {
-                        const participationId = response.data.email;
+                        const participationId = email;
                         localStorage.setItem('participationId', participationId);
                         console.log(response.data);
 
