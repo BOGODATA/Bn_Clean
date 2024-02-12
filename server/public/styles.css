@@ -433,7 +433,7 @@ input[type="submit"]:hover {
     }
     .left-part
     .encart {
-        width: 45vh;
+        width: 49vh;
     }
     .responsive-image1 {
         margin-left: 8vh;
@@ -454,6 +454,12 @@ input[type="submit"]:hover {
     .encart-text {
         margin-bottom: 3vh;
         font-size: 1.8vh;
+    }
+    .encart-body {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: -6vh;
     }
     .right-part
 form {
