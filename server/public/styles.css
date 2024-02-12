@@ -917,117 +917,136 @@ input[type="submit"]:hover {
     html {
         background: #773100 url(/HomePage/FOND.png);
         background-size: 231vh 110%;
-        background-repeat: no-repeat;}
-        .numbers-container {
-            margin-left: 10px;
-        
-        }
+        background-repeat: no-repeat;
+    }
 
-        .responsive-image1 {
-            margin-left: 8vh;
+    .numbers-container {
+        margin-left: 10px;
 
-            width: 26vh;
-            position: relative;
-        }
+    }
 
-        .encart-overlay1 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            top: 27%;
-            margin-left: 12vh;
-            max-width: 38vh;
-        }
+    .responsive-image1 {
+        margin-left: 8vh;
+        left: -14vh;
+        width: 26vh;
+        position: relative;
+    }
 
-        .footer {
-            text-align: center;
-            height: 20vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
+    .encart-overlay1 {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 27%;
+        margin-left: 12vh;
+        max-width: 38vh;
+    }
 
-        .left-part {
-            .encart {
-            width: 60vh;}
-        }
-        .bn3 {
-            position: absolute;
-            left: 0vh;
-            bottom: -10vh;
-            width: 26vh;
-        }
-        .bnseul {
-            margin-left: 0;
+    .footer {
+        text-align: center;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .left-part {
+        .encart {
+            width: 60vh;
         }
     }
 
-    @media screen and (max-width:1024px) and (min-width:500px) {
+    .bn3 {
+        position: absolute;
+        left: 0vh;
+        bottom: -10vh;
+        width: 26vh;
+    }
 
-        .above-body-mobile {
-            .mobiletitle-over {
-                font-size: 3vh;
-            }
+    .bnseul {
+        margin-left: 0;
+        width: 35vh;
 
-            .mobiletitle {
-                width: 30vh;
-            }
+    }
 
-            .imgmobile {
-                width: 35vh;
-            }
-        }
-
-        .mobile-container {
-            width: 72% !important;
-            margin-left: 14% !important;
-        }
-
-        .encart-title {
-            font-size: 30px !important;
-            margin-top: 2vh !important;
-        }
-
-        .encart-text {
-            font-size: 1.7vh !important;
-            width: 27vh !important;
-        }
+    .right-part {
+        flex: 1;
+        padding: 0;
+        margin-top: 14vh;
+        margin-left: -40vh;
 
         form {
-            width: 100% !important;
-            margin: 0;
+            max-width: 70vh;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:500px) {
+
+    .above-body-mobile {
+        .mobiletitle-over {
+            font-size: 3vh;
         }
 
-        .form-contact {
-            width: 100% !important;
+        .mobiletitle {
+            width: 30vh;
         }
 
-        .form-class {
-            width: 100% !important;
-            margin-left: 0 !important;
+        .imgmobile {
+            width: 35vh;
+        }
+    }
+
+    .mobile-container {
+        width: 72% !important;
+        margin-left: 14% !important;
+    }
+
+    .encart-title {
+        font-size: 30px !important;
+        margin-top: 2vh !important;
+    }
+
+    .encart-text {
+        font-size: 1.7vh !important;
+        width: 27vh !important;
+    }
+
+    form {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    .form-contact {
+        width: 100% !important;
+    }
+
+    .form-class {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .check-wrapper {
+        margin-left: 0 !important;
+
+        .desk {
+            font-size: 1.8vh !important;
         }
 
-        .check-wrapper {
-            margin-left: 0 !important;
+        .bold {
+            font-size: 1.8vh !important;
+        }
 
-            .desk {
-                font-size: 1.8vh !important;
-            }
+        .centre {
+            font-size: 1.8vh !important;
+        }
 
-            .bold {
-                font-size: 1.8vh !important;
-            }
-
-            .centre {
-                font-size: 1.8vh !important;
-            }
-
-            .form-check-input {
-                width: 2vh !important;
-                height: 2vh !important;
-                margin-right: 1vh;
-            }
-
+        .form-check-input {
+            width: 2vh !important;
+            height: 2vh !important;
+            margin-right: 1vh;
         }
 
     }
+
+}
