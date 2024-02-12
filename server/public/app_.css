@@ -51,7 +51,7 @@ svg text{
 }
 
 
-@media screen and (max-width:1400px) and (min-width:1300px) {
+@media screen and (max-width:1400px) and (min-width:1200px) {
     .select-style {
         display: flex;
         justify-content: center;
@@ -88,7 +88,7 @@ svg text{
         text-align: center;
     }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px)and (min-width:1190px) {
 
 
     .body{
