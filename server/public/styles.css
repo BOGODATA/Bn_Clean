@@ -403,97 +403,70 @@ input[type="submit"]:hover {
 
 
 @media screen and (min-width:1520px)and (max-width:1600px) {
-
-    main, body, html {
-        background: #773100 url(/HomePage/FOND.png);
-        background-size: 181vh 120vh;
-        background-repeat: no-repeat;
-    }
-    
-
-    .left-part .encart {
-        width: 45vh;
-    }
-
-    .responsive-image1 {
-        margin-left: 8vh;
-        left: -14vh;
-        width: 18vh;
-        position: relative;
-    }
-
-    .encart-title {
-        font-size: 2vh;
-        font-weight: 700;
-        margin-left: 3.5vh;
-    }
-
-    .encart-text {
-        margin-bottom: 3vh;
-        font-size: 1.8vh;
-    }
-
-    .encart-body {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        left: -2vh;
-    }
-
-    .responsive-image1 {
-        margin-left: 8vh;
-        margin-right: -15vh;
-        width: 20vh;
-        position: relative;
-    }
-
-    .bn3 {
-        position: absolute;
-        left: 0vh;
-        bottom: -10vh;
-    }
-
-    .bnseul {
-        margin-left: 0;
-        width: 25vh;
-    }
-
-    .right-part form {
-        max-width: 70vh;
-        margin: 0 auto;
-        width: 60vh;
-    }
-}
-
-@media screen and (min-width:1400px)and (max-width:1519px) {
-
-    ain,
-    body,
-    html {
+    ain, body, html {
         background: #773100 url(/HomePage/FOND.png);
         background-size: 195vh 110%;
         background-repeat: no-repeat;
     }
-
     .left-part {
         .encart {
-            width: 60vh;
-        }
-    }
-
+        width: 60vh;
+    }}
     .responsive-image1 {
         margin-left: 8vh;
         margin-right: -15vh;
         width: 20vh;
         position: relative;
     }
-
     .bn3 {
         position: absolute;
         left: 0vh;
         bottom: -10vh;
         width: 23vh;
     }
+}
+@media screen and (min-width:1400px)and (max-width:1520px) {
+    main, body, html {
+        background: #773100 url(/HomePage/FOND.png);
+        background-size: 195vh 110vh;
+        background-repeat: no-repeat;
+    }
+    .left-part
+    .encart {
+        width: 45vh;
+    }
+    .responsive-image1 {
+        margin-left: 8vh;
+        margin-right: -15vh;
+        width: 20vh;
+        position: relative;
+    }
+    .bn3 {
+        position: absolute;
+        left: 0vh;
+        bottom: -10vh;
+        width: 23vh;
+    }
+    .bnseul {
+        margin-left: 0;
+        width: 23vh;
+    }
+    .encart-text {
+        margin-bottom: 3vh;
+        font-size: 1.8vh;
+    }
+    .right-part
+form {
+    max-width: 70vh;
+    margin: 0 auto;
+    width: 60vh;
+}
+.responsive-image1 {
+    margin-left: 8vh;
+    left: -14vh;
+    width: 18vh;
+    position: relative;
+}
 }
 
 @media screen and (max-width:1024px) {
