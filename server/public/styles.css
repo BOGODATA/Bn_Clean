@@ -428,19 +428,14 @@ input[type="submit"]:hover {
 @media screen and (min-width:1400px)and (max-width:1520px) {
     main, body, html {
         background: #773100 url(/HomePage/FOND.png);
-        background-size: 195vh 110vh;
+        background-size: 170vh 120vh;
         background-repeat: no-repeat;
     }
     .left-part
     .encart {
         width: 49vh;
     }
-    .responsive-image1 {
-        margin-left: 8vh;
-        margin-right: -15vh;
-        width: 20vh;
-        position: relative;
-    }
+   
     .bn3 {
         position: absolute;
         left: 0vh;
@@ -465,11 +460,11 @@ input[type="submit"]:hover {
 form {
     max-width: 70vh;
     margin: 0 auto;
-    width: 60vh;
+    width: 50vh;
 }
 .responsive-image1 {
     margin-left: 8vh;
-    left: -14vh;
+    left: -9vh;
     width: 18vh;
     position: relative;
 }
