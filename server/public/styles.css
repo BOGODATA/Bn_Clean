@@ -428,14 +428,19 @@ input[type="submit"]:hover {
 @media screen and (min-width:1400px)and (max-width:1520px) {
     main, body, html {
         background: #773100 url(/HomePage/FOND.png);
-        background-size: 170vh 120vh;
+        background-size: 190vh 130vh;
         background-repeat: no-repeat;
     }
     .left-part
     .encart {
         width: 49vh;
     }
-   
+    .right-part {
+        flex: 1;
+        padding: 0;
+        margin-top: 14vh;
+        margin-left: -44vh;
+    }
     .bn3 {
         position: absolute;
         left: 0vh;
