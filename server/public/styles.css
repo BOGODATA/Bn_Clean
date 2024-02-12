@@ -469,6 +469,51 @@ form {
     position: relative;
 }
 }
+@media screen and (min-width:1521px)and (max-width:1700px) {
+    main, body, html {
+        background: #773100 url(/HomePage/FOND.png);
+        background-size: 210vh 150vh;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+    }
+    .left-part
+    .encart {
+        width: 49vh;
+    }
+   
+    .bn3 {
+        position: absolute;
+        left: 0vh;
+        bottom: -10vh;
+        width: 23vh;
+    }
+    .bnseul {
+        margin-left: 0;
+        width: 23vh;
+    }
+    .encart-text {
+        margin-bottom: 3vh;
+        font-size: 1.8vh;
+    }
+    .encart-body {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: -6vh;
+    }
+    .right-part
+form {
+    max-width: 70vh;
+    margin: 0 auto;
+    width: 50vh;
+}
+.responsive-image1 {
+    margin-left: 8vh;
+    margin-right: -23vh;
+    width: 30vh;
+    position: relative;
+}
+}
 
 @media screen and (max-width:1024px) {
 
