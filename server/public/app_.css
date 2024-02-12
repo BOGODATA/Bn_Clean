@@ -51,55 +51,8 @@ svg text{
 }
 
 
-@media screen and (max-width:1400px) and (min-width:1200px) {
-    .select-style {
-        display: flex;
-        justify-content: center;
-        border-radius: 50px;
-        text-align: center;
-        align-items: center;
-        border: solid 0.5px rgb(4, 56, 4);
-        background-color: black;
-        color: white;
-        width: 40vh;
-        height: 4vh;
-        font-size: 20px;
-        font-family: BakerieRough-Black, sans-serif;
-        box-shadow: inset 2px 2px 2px 1px rgb(6 34 6);
-    }
 
-    .mid-container {
-        .right {
-        position: relative;
-        top: -4vh;
-    }}
-    .mid-container
-    .right
-    #result {
-        color: #1156a1;
-        display: flex;
-        font-size: 18px;
-        top: -60vh;
-        text-align: left;
-        left: 57vh;
-        padding: 30px;
-        font-family: Righteous;
-        margin-left: 50px;
-        text-align: center;
-    }
-    .selection{
-        display: flex;
-        justify-content: center;
-        margin: auto;
-
-    }
-    
-    .selection ul li{
-        list-style: none;
-        margin: 30px;
-    }
-}
-@media screen and (min-width: 1000px)and (max-width:1190px) {
+@media screen and (min-width: 1000px) {
 
 
     .body{
