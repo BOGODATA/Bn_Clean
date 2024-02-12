@@ -87,6 +87,18 @@ svg text{
         margin-left: 50px;
         text-align: center;
     }
+    .selection{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 40px;
+
+    }
+    
+    .selection ul li{
+        list-style: none;
+        margin: 30px;
+    }
 }
 @media screen and (min-width: 1000px)and (max-width:1190px) {
 
