@@ -428,7 +428,7 @@ input[type="submit"]:hover {
 @media screen and (min-width:1400px)and (max-width:1520px) {
     main, body, html {
         background: #773100 url(/HomePage/FOND.png);
-        background-size: 190vh 130vh;
+        background-size: 178vh 130vh;
         background-repeat: no-repeat;
     }
     .left-part
@@ -477,7 +477,7 @@ form {
 @media screen and (min-width:1521px)and (max-width:1700px) {
     main, body, html {
         background: #773100 url(/HomePage/FOND.png);
-        background-size: 208vh 150vh;
+        background-size: 190vh 150vh;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
     }
@@ -1034,7 +1034,7 @@ form {
     body,
     html {
         background: #773100 url(/HomePage/FOND.png);
-        background-size: 231vh 110%;
+        background-size: 180vh 110%;
         background-repeat: no-repeat;
     }
 
@@ -1068,6 +1068,11 @@ form {
     }
 
     .left-part {
+        flex: 1;
+        padding: 0;
+        width: fit-content;
+        margin-top: 10vh;
+        margin-left: -5vh;
         .encart {
             width: 60vh;
         }
@@ -1077,25 +1082,25 @@ form {
         position: absolute;
         left: 0vh;
         bottom: -10vh;
-        width: 26vh;
+        width: 24vh;
     }
 
     .bnseul {
         margin-left: 0;
-        width: 35vh;
+        width: 25vh;
 
     }
-
+   
     .right-part {
         flex: 1;
         padding: 0;
         margin-top: 14vh;
         margin-left: -40vh;
-
         form {
-            max-width: 70vh;
+            width: 60vh;
             margin: 0 auto;
         }
+       
     }
 }
 
