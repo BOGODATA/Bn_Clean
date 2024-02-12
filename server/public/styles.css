@@ -402,9 +402,7 @@ input[type="submit"]:hover {
 
 
 
-@media screen and (max-width:1000px) {
-
-}
+@media screen and (max-width:1000px) {}
 
 
 @media screen and (max-width:1024px) {
@@ -416,6 +414,7 @@ input[type="submit"]:hover {
         background-size: cover;
         margin-bottom: -1px;
     }
+
     .footer {
         text-align: center;
         display: flex;
@@ -431,6 +430,7 @@ input[type="submit"]:hover {
         }
 
     }
+
     .responsive-image1 {
         display: none;
     }
@@ -642,7 +642,8 @@ input[type="submit"]:hover {
                 width: 86%;
                 margin-left: 7%;
             }
-            #image{
+
+            #image {
                 border-radius: 0;
                 width: 86%;
                 margin-left: 7%;
@@ -909,72 +910,124 @@ input[type="submit"]:hover {
     }
 }
 
-@media screen and (max-width:1024px) and (min-width:500px) {
+@media screen and (max-width:1400px) and (min-width:1200px) {
 
-    .above-body-mobile {
-        .mobiletitle-over {
-            font-size: 3vh;
+    main,
+    body,
+    html {
+        background: #773100 url(/HomePage/FOND.png);
+        background-size: 231vh 110%;
+        background-repeat: no-repeat;}
+        .numbers-container {
+            margin-left: 10px;
+        
         }
 
-        .mobiletitle {
-            width: 30vh;
+        .responsive-image1 {
+            margin-left: 8vh;
+
+            width: 26vh;
+            position: relative;
         }
 
-        .imgmobile {
-            width: 35vh;
+        .encart-overlay1 {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 27%;
+            margin-left: 12vh;
+            max-width: 38vh;
+        }
+
+        .footer {
+            text-align: center;
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .left-part {
+            .encart {
+            width: 60vh;}
+        }
+        .bn3 {
+            position: absolute;
+            left: 0vh;
+            bottom: -10vh;
+            width: 26vh;
+        }
+        .bnseul {
+            margin-left: 0;
         }
     }
 
-    .mobile-container {
-        width: 72% !important;
-        margin-left: 14% !important;
-    }
+    @media screen and (max-width:1024px) and (min-width:500px) {
 
-    .encart-title {
-        font-size: 30px !important;
-        margin-top: 2vh !important;
-    }
+        .above-body-mobile {
+            .mobiletitle-over {
+                font-size: 3vh;
+            }
 
-    .encart-text {
-        font-size: 1.7vh !important;
-        width: 27vh !important;
-    }
+            .mobiletitle {
+                width: 30vh;
+            }
 
-    form {
-        width: 100% !important;
-        margin: 0;
-    }
-
-    .form-contact {
-        width: 100% !important;
-    }
-
-    .form-class {
-        width: 100% !important;
-        margin-left: 0 !important;
-    }
-
-    .check-wrapper {
-        margin-left: 0 !important;
-
-        .desk {
-            font-size: 1.8vh !important;
+            .imgmobile {
+                width: 35vh;
+            }
         }
 
-        .bold {
-            font-size: 1.8vh !important;
+        .mobile-container {
+            width: 72% !important;
+            margin-left: 14% !important;
         }
 
-        .centre {
-            font-size: 1.8vh !important;
+        .encart-title {
+            font-size: 30px !important;
+            margin-top: 2vh !important;
         }
 
-        .form-check-input {
-            width: 2vh !important;
-            height: 2vh !important;
-            margin-right: 1vh;
+        .encart-text {
+            font-size: 1.7vh !important;
+            width: 27vh !important;
+        }
+
+        form {
+            width: 100% !important;
+            margin: 0;
+        }
+
+        .form-contact {
+            width: 100% !important;
+        }
+
+        .form-class {
+            width: 100% !important;
+            margin-left: 0 !important;
+        }
+
+        .check-wrapper {
+            margin-left: 0 !important;
+
+            .desk {
+                font-size: 1.8vh !important;
+            }
+
+            .bold {
+                font-size: 1.8vh !important;
+            }
+
+            .centre {
+                font-size: 1.8vh !important;
+            }
+
+            .form-check-input {
+                width: 2vh !important;
+                height: 2vh !important;
+                margin-right: 1vh;
+            }
+
         }
 
     }
-
-}
