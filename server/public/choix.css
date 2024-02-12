@@ -4,7 +4,8 @@ main {
     background: #773100 url(/Choix/FOND\ 2\ TEST.png);
     background-size: cover;
 }
-#partnersListContainer{
+
+#partnersListContainer {
     overflow: auto;
     height: 40vh;
     display: flex;
@@ -16,44 +17,53 @@ main {
     font-family: Righteous;
 
 }
-#partner_address{
+
+#partner_address {
     color: #1156a1;
 }
-#partner_name{
+
+#partner_name {
     font-size: 4vh;
     color: #773100;
     margin-bottom: 0;
     text-transform: uppercase;
     font-family: Righteous;
 }
-#partner_button{
-      color: rgb(248 255 247);
-      margin-bottom: 0;
-      text-transform: uppercase;
-      font-family: Righteous;
-      background-color: #1156a1;
+
+#partner_button {
+    color: rgb(248 255 247);
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: Righteous;
+    background-color: #1156a1;
 }
+
 #partner_phone {
     color: #E43532;
 }
+
 #partner_cp {
     font-weight: bold;
 }
+
 #partner_address {
     font-weight: bold;
     margin-bottom: 0;
 }
+
 #partner_details {
-    color: #773100; 
+    color: #773100;
     margin-top: 2vh;
     margin-bottom: 0;
     font-weight: bold;
 }
-#activity_type{
+
+#activity_type {
     font-size: 3vh;
-    color: #773100; 
+    color: #773100;
     margin-bottom: 1rem;
 }
+
 .above-above-body {
     display: flex;
 
@@ -77,12 +87,14 @@ main {
     }
 }
 
-.part{
-    display: none; 
-}
-.part2{
+.part {
     display: none;
 }
+
+.part2 {
+    display: none;
+}
+
 .mid-container {
     display: flex;
     position: relative;
@@ -93,15 +105,17 @@ main {
     background: linear-gradient(to right, #1156a1 50%, white 50%);
     top: 1vh;
 
-    .valid{
-        .validate{
+    .valid {
+        .validate {
             display: none;
         }
     }
-    .bnMobile{
+
+    .bnMobile {
         display: none;
-       
+
     }
+
     .left {
         display: flex;
         position: relative;
@@ -150,8 +164,47 @@ main {
 
 
 }
+
+@media screen and (max-width:1400px) and (min-width:1300px) {
+    .select-style {
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        text-align: center;
+        align-items: center;
+        border: solid 0.5px rgb(4, 56, 4);
+        background-color: black;
+        color: white;
+        width: 40vh;
+        height: 4vh;
+        font-size: 20px;
+        font-family: BakerieRough-Black, sans-serif;
+        box-shadow: inset 2px 2px 2px 1px rgb(6 34 6);
+    }
+
+    .mid-container {
+        .right {
+        position: relative;
+        top: -4vh;
+    }}
+    .mid-container
+    .right
+    #result {
+        color: #1156a1;
+        display: flex;
+        font-size: 18px;
+        top: -60vh;
+        text-align: left;
+        left: 57vh;
+        padding: 30px;
+        font-family: Righteous;
+        margin-left: 50px;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width:1300px) and (min-width:850px) {
-    #partnersListContainer{
+    #partnersListContainer {
         overflow: auto;
         height: 38vh;
         display: flex;
@@ -162,8 +215,9 @@ main {
         padding-right: 2vh;
         font-family: Righteous;
         font-size: 10px;
-    
+
     }
+
     #result {
         color: #1156a1;
         display: flex;
@@ -173,9 +227,10 @@ main {
         left: 57vh;
         margin: 20px;
         padding: 30px;
-        
+
     }
-    #partner_details{
+
+    #partner_details {
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -188,7 +243,8 @@ main {
         background: #773100;
         background-size: cover;
     }
-    #partnersListContainer{
+
+    #partnersListContainer {
         overflow: auto;
         height: 20vh;
         margin: 0;
@@ -197,46 +253,50 @@ main {
         width: 40vh;
         padding-left: 2vh;
         font-family: Righteous;
-       
+
     }
-    #partner_name{
+
+    #partner_name {
         font-size: 2vh;
         color: #773100;
         margin-bottom: 0;
         text-transform: uppercase;
         font-family: Righteous;
     }
-    .above-above-body{
 
-    .op {
-        display: none;
+    .above-above-body {
+
+        .op {
+            display: none;
+        }
+
+
+
+        .bn {
+            display: none;
+        }
+
+
+        .logo {
+            position: relative;
+            margin-top: 20px;
+            height: auto;
+            max-width: 80%;
+            text-align: center;
+            display: block;
+            max-height: 200px;
+            left: -90px;
+            /* width: 80vh; */
+        }
+
+        .drapeau {
+            display: block;
+            position: relative;
+            max-height: 13vh;
+
+        }
     }
 
-    
-
-    .bn {
-        display: none;
-    }
-    
-   
-    .logo {
-        position: relative;
-        margin-top: 20px;
-        height: auto;
-        max-width: 80%;
-        text-align: center;
-        display: block;
-        max-height: 200px;
-        left: -90px;
-        /* width: 80vh; */
-    }
-
-    .drapeau {
-        display: block;
-        position: relative;
-        max-height: 13vh;
-
-    }}
     .num {
         background-color: red;
         color: white;
@@ -250,11 +310,13 @@ main {
 
 
     }
-    .part{
+
+    .part {
         display: block;
         padding-top: 50px;
         color: #fff;
     }
+
     .mid-container {
         display: block;
         margin-left: -380px;
@@ -267,7 +329,7 @@ main {
         top: -3vh;
 
         .valid {
-            padding-top:20px;
+            padding-top: 20px;
             display: flex;
             justify-content: center;
 
@@ -278,14 +340,16 @@ main {
                 width: 200px;
                 height: 50px;
                 color: #1156a1 !important;
-        font-weight: bold;
+                font-weight: bold;
             }
-            .bnMobile{
+
+            .bnMobile {
                 display: block;
                 width: 30%;
             }
         }
-        .part2{
+
+        .part2 {
             display: block;
             padding-top: 20px;
             color: #fff;
@@ -307,7 +371,7 @@ main {
             .selection {
                 display: none;
             }
-           
+
 
 
 
@@ -330,7 +394,7 @@ main {
                 left: 57vh;
                 margin: 20px;
                 padding: 30px;
-                
+
             }
 
 
@@ -338,32 +402,38 @@ main {
 
 
     }
+
     @media screen and (max-height: 700px) {
         .mid-container {
             margin-left: -300px;
         }
     }
+
     @media screen and (min-height: 700px) and (max-height: 790px) {
         .mid-container {
             margin-left: -320px;
         }
     }
+
     @media screen and (min-height: 790px) and (max-height: 890px) {
         .mid-container {
             margin-left: -370px;
         }
     }
+
     @media screen and (min-height:890px) and (max-height: 1000px) {
         .mid-container {
             margin-left: -400px;
         }
-        .above-above-body{
 
-            .logo{
+        .above-above-body {
+
+            .logo {
                 max-width: 90%;
             }
 
-    }
-    
+        }
 
-}}
+
+    }
+}
