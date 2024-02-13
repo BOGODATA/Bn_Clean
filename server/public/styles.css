@@ -1134,32 +1134,45 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-height: 1000px) {
-    main, body, html {
+
+    main,
+    body,
+    html {
         background: #773100 url(/HomePage/FOND.png);
         background-size: 150vh 150vh;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
     }
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
         max-width: 1650px;
     }
+
     .responsive-image1 {
         margin-left: 8vh;
         position: relative;
     }
+
     .right-part form {
         max-width: 70vh;
         margin: 0 auto;
         width: 45vh;
         margin-left: 60px;
-}
+    }
+
     .encart-overlay1 {
         color: white;
         font-size: 20px;
         position: absolute;
-        top: 35%;
-        margin-left: 15vh;
+        left: 15vh;
         max-width: 38vh;
+        top: 50px;
+        left: -10px;
     }
 
     .left-part {
@@ -1167,7 +1180,8 @@ input[type="submit"]:hover {
         width: fit-content;
         margin-top: 15vh;
         margin-left: 0;
-
+        position: relative;
+    
         .encart {
             width: 60vh;
         }
@@ -1175,26 +1189,32 @@ input[type="submit"]:hover {
 
     .bnseul {
         margin-left: -40vh;
+        width: 20vh;
+
     }
 
     .bn3 {
         position: absolute;
         left: 10vh;
-        bottom: -15vh;
+        bottom: -20vh;
         width: 20vh;
     }
+
     .right-part {
         flex: 1;
         padding: 0;
         margin-top: 14vh;
+        position: relative;
+        left: 7vh;
     }
+
     .encart-body {
         display: flex;
         flex-direction: row;
         position: absolute;
     }
 
-   
+
 }
 
 @media screen and (max-width:1024px) and (min-width:500px) {
