@@ -1139,7 +1139,7 @@ input[type="submit"]:hover {
     body,
     html {
         background: #773100 url(/HomePage/FOND.png);
-        background-size: 150vh 150vh;
+        background-size: 150vh 110vh;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
     }
@@ -1185,6 +1185,9 @@ input[type="submit"]:hover {
     
         .encart {
             width: 60vh;
+        }
+        .num1 {
+            margin-bottom: 8vh;
         }
     }
 
