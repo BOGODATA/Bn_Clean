@@ -403,21 +403,28 @@ input[type="submit"]:hover {
 
 
 @media screen and (min-width:1520px)and (max-width:1600px) {
-    ain, body, html {
+
+    ain,
+    body,
+    html {
         background: #773100 url(/HomePage/FOND.png);
         background-size: 195vh 110%;
         background-repeat: no-repeat;
     }
+
     .left-part {
         .encart {
-        width: 60vh;
-    }}
+            width: 60vh;
+        }
+    }
+
     .responsive-image1 {
         margin-left: 8vh;
         margin-right: -15vh;
         width: 20vh;
         position: relative;
     }
+
     .bn3 {
         position: absolute;
         left: 0vh;
@@ -425,102 +432,122 @@ input[type="submit"]:hover {
         width: 23vh;
     }
 }
+
 @media screen and (min-width:1400px)and (max-width:1520px) {
-    main, body, html {
+
+    main,
+    body,
+    html {
         background: #773100 url(/HomePage/FOND.png);
         background-size: 178vh 130vh;
         background-repeat: no-repeat;
     }
-    .left-part
-    .encart {
+
+    .left-part .encart {
         width: 49vh;
     }
+
     .right-part {
         flex: 1;
         padding: 0;
         margin-top: 14vh;
         margin-left: -44vh;
     }
+
     .bn3 {
         position: absolute;
         left: 0vh;
         bottom: -10vh;
         width: 23vh;
     }
+
     .bnseul {
         margin-left: 0;
         width: 23vh;
     }
+
     .encart-text {
         margin-bottom: 3vh;
         font-size: 1.8vh;
     }
+
     .encart-body {
         display: flex;
         flex-direction: row;
         position: absolute;
         left: -6vh;
     }
-    .right-part
-form {
-    max-width: 70vh;
-    margin: 0 auto;
-    width: 50vh;
+
+    .right-part form {
+        max-width: 70vh;
+        margin: 0 auto;
+        width: 50vh;
+    }
+
+    .responsive-image1 {
+        margin-left: 8vh;
+        left: -19vh;
+        width: 18vh;
+        position: relative;
+    }
 }
-.responsive-image1 {
-    margin-left: 8vh;
-    left: -19vh;
-    width: 18vh;
-    position: relative;
-}
-}
+
 @media screen and (min-width:1521px)and (max-width:1700px) {
-    main, body, html {
+
+    main,
+    body,
+    html {
         background: #773100 url(/HomePage/FOND.png);
         background-size: 190vh 150vh;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
     }
-    .left-part
-    .encart {
+
+    .left-part .encart {
         width: 49vh;
     }
+
     .right-part {
         flex: 1;
         padding: 0;
         margin-top: 14vh;
     }
+
     .bn3 {
         position: absolute;
         left: 0vh;
         bottom: -10vh;
         width: 23vh;
     }
+
     .bnseul {
         margin-left: 0;
         width: 23vh;
     }
+
     .encart-text {
         margin-bottom: 3vh;
         font-size: 1.8vh;
     }
+
     .encart-body {
         display: flex;
         flex-direction: row;
         position: absolute;
         left: -6vh;
     }
-    .right-part
-form {
-    max-width: 70vh;
-    margin: 0 auto;
-    width: 50vh;
-}
-.responsive-image1 {
-    margin-left: 8vh;
-    margin-right: -13vh;
-    position: relative;
-}
+
+    .right-part form {
+        max-width: 70vh;
+        margin: 0 auto;
+        width: 50vh;
+    }
+
+    .responsive-image1 {
+        margin-left: 8vh;
+        margin-right: -13vh;
+        position: relative;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -1073,6 +1100,7 @@ form {
         width: fit-content;
         margin-top: 10vh;
         margin-left: -5vh;
+
         .encart {
             width: 50vh;
         }
@@ -1090,17 +1118,60 @@ form {
         width: 25vh;
 
     }
-   
+
     .right-part {
         flex: 1;
         padding: 0;
         margin-top: 14vh;
         margin-left: -40vh;
+
         form {
             width: 50vh;
             margin: 0 auto;
         }
-       
+
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    .encart-overlay1 {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 35%;
+        margin-left: 15vh;
+        max-width: 38vh;
+    }
+
+    .left-part {
+        flex: 1;
+        padding: 0;
+        width: fit-content;
+        margin-top: 10vh;
+        margin-left: -8vh;
+
+        .encart {
+            width: 60vh;
+        }
+    }
+
+    .bnseul {
+        margin-left: -40vh;
+    }
+
+    .bn3 {
+        position: absolute;
+        left: -40vh;
+        bottom: -10vh;
+        width: 23vh;
+    }
+
+    .left-part {
+        /* flex: 1; */
+        padding: 0;
+        width: fit-content;
+        margin-top: 20vh;
+        margin-left: 0;
     }
 }
 
