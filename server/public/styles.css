@@ -1140,16 +1140,20 @@ input[type="submit"]:hover {
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
     }
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1650px;
+    }
     .responsive-image1 {
         margin-left: 8vh;
-        margin-right: -13vh;
+        margin-right: -1vh;
         position: relative;
-        width: 27vh;
     }
     .right-part form {
         max-width: 70vh;
         margin: 0 auto;
-        width: 50vh;}
+        width: 45vh;
+        margin-left: 60px;
+}
     .encart-overlay1 {
         color: white;
         font-size: 20px;
@@ -1162,7 +1166,7 @@ input[type="submit"]:hover {
     .left-part {
         padding: 0;
         width: fit-content;
-        margin-top: 20vh;
+        margin-top: 15vh;
         margin-left: 0;
 
         .encart {
@@ -1176,15 +1180,19 @@ input[type="submit"]:hover {
 
     .bn3 {
         position: absolute;
-        left: -40vh;
-        bottom: -10vh;
-        width: 23vh;
+        left: 10vh;
+        bottom: -15vh;
+        width: 20vh;
     }
     .right-part {
         flex: 1;
         padding: 0;
         margin-top: 14vh;
-        margin-left: 30vh;
+    }
+    .encart-body {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
     }
 
    
