@@ -1134,6 +1134,22 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-height: 1000px) {
+    main, body, html {
+        background: #773100 url(/HomePage/FOND.png);
+        background-size: 150vh 150vh;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+    }
+    .responsive-image1 {
+        margin-left: 8vh;
+        margin-right: -13vh;
+        position: relative;
+        width: 27vh;
+    }
+    .right-part form {
+        max-width: 70vh;
+        margin: 0 auto;
+        width: 50vh;}
     .encart-overlay1 {
         color: white;
         font-size: 20px;
@@ -1144,11 +1160,10 @@ input[type="submit"]:hover {
     }
 
     .left-part {
-        flex: 1;
         padding: 0;
         width: fit-content;
-        margin-top: 10vh;
-        margin-left: -8vh;
+        margin-top: 20vh;
+        margin-left: 0;
 
         .encart {
             width: 60vh;
@@ -1165,14 +1180,14 @@ input[type="submit"]:hover {
         bottom: -10vh;
         width: 23vh;
     }
-
-    .left-part {
-        /* flex: 1; */
+    .right-part {
+        flex: 1;
         padding: 0;
-        width: fit-content;
-        margin-top: 20vh;
-        margin-left: 0;
+        margin-top: 14vh;
+        margin-left: 30vh;
     }
+
+   
 }
 
 @media screen and (max-width:1024px) and (min-width:500px) {
