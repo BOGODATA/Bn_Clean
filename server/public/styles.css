@@ -490,6 +490,30 @@ input[type="submit"]:hover {
         position: relative;
     }
 }
+@media screen and(min-width:1600px)and(min-height:1000) {
+    main, body, html {
+        background: #773100 url(/HomePage/FOND.png);
+        background-size: 190vh 70vw;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+    }
+    .container{
+        margin: 0;
+        max-width: 100%;
+    }
+    .responsive-image1 {
+        width: 16vw;
+        margin-left: 8vh;
+        margin-right: -1vh;
+        position: relative;
+    }
+    .encart-body {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 0vh;
+    }
+}
 
 @media screen and (min-width:1521px)and (max-width:1700px) {
 
