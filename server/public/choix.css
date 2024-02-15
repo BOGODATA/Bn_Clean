@@ -165,6 +165,97 @@ main {
 
 }
 
+@media screen and (min-width:1350px) and (min-height:700px) {
+    .above-above-body 
+    {.op {
+    width: 100vh;
+    position: relative;
+    left: 10vh;
+    top: 2vw;
+}}
+body, html, main {
+    background: #773100 url(/Choix/FOND\ 2\ TEST.png);
+    background-size: 100vw 64vw;
+
+}
+.mid-container {
+    display: flex;
+    position: relative;
+    margin: 20px;
+    left: 24vw;
+    width: 110vh;
+    height: 62vh;
+    background: linear-gradient(to right, #1156a1 50%, white 50%);
+    top: 1vh;
+}
+.mid-container .right #result {
+    color: #1156a1;
+    display: flex;
+    font-size: 3vw;
+    top: -60vh;
+    text-align: left;
+    left: 57vh;
+    padding: 30px;
+    font-family: Righteous;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 1vw;
+
+}
+#partnersListContainer {
+    overflow: auto;
+    height: 27vw;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    padding-left: 2vh;
+    margin-left: 80px;
+    padding-right: 2vh;
+    font-family: Righteous;
+}
+.mid-container
+.left
+.carte {
+    position: relative;
+    top: 1.5vh;
+    width: 30vw;
+    height: 55vh;
+    left: 1vw;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.selection{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.mid-container
+.right {
+    position: relative;
+    top: -4vh;
+    right: 1vw;
+}
+.select-style {
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    border: solid 0.5px rgb(4, 56, 4);
+    background-color: black;
+    color: white;
+    width: 40vh;
+    height: 5vh;
+    margin-left: 4vw;
+    font-size: 20px;
+    font-family: BakerieRough-Black, sans-serif;
+    box-shadow: inset 2px 2px 2px 1px rgb(6 34 6);
+}}
 
 @media screen and (min-width:1590px) and (min-height:900px) {
 
