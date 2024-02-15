@@ -179,7 +179,17 @@ main {
         position: relative;
         top: 0
     }
-
+    #partnersListContainer {
+        overflow: auto;
+        height: 28vw;
+        display: flex;
+        flex-direction: column;
+        width: 50vh;
+        padding-left: 2vh;
+        margin-left: 80px;
+        padding-right: 2vh;
+        font-family: Righteous;
+    }
     .selection {
         display: flex;
         justify-content: center;
@@ -194,6 +204,7 @@ main {
     left: 25vh;
     top: 2vh;
 }
+
 }
 
 @media screen and (max-width:1300px) and (min-width:850px) {
