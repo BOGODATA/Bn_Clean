@@ -55,7 +55,7 @@ main {
     color: #773100;
     margin-top: 2vh;
     margin-bottom: 0;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #activity_type {
@@ -175,7 +175,7 @@ main {
 }}
 body, html, main {
     background: #773100 url(/Choix/FOND\ 2\ TEST.png);
-    background-size: 100vw 64vw;
+    background-size: 100vw 61vw;
 
 }
 .mid-container {
@@ -324,7 +324,7 @@ ul {
     }
 
     #partner_details {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial;
     }
 }
 
