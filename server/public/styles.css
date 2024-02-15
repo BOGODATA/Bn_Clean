@@ -1072,8 +1072,8 @@ input[type="submit"]:hover {
 
     .responsive-image1 {
         margin-left: 8vh;
-        left: -14vh;
-        width: 26vh;
+        left: -16vh;
+        width: 20vh;
         position: relative;
     }
 
@@ -1110,12 +1110,12 @@ input[type="submit"]:hover {
         position: absolute;
         left: 0vh;
         bottom: -10vh;
-        width: 24vh;
+        width: 15vw;
     }
 
     .bnseul {
         margin-left: 0;
-        width: 25vh;
+        width: 13vw;
 
     }
 
@@ -1133,13 +1133,13 @@ input[type="submit"]:hover {
     }
 }
 
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 1000px)and(min-width:1800px) {
 
     main,
     body,
     html {
         background: #773100 url(/HomePage/FOND.png);
-        background-size: 150vh 110vh;
+        background-size: 100vw 70vw;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
     }
