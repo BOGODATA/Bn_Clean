@@ -165,7 +165,7 @@ main {
 
 }
 
-@media screen and (min-width:1350px) and (min-height:700px) {
+@media screen and (min-width:1350px)and (max-width:1390px) and (min-height:700px) {
     .above-above-body 
     {.op {
     width: 100vh;
@@ -255,7 +255,7 @@ ul {
     box-shadow: inset 2px 2px 2px 1px rgb(6 34 6);
 }}
 
-@media screen and (min-width:1590px) and (min-height:900px) {
+@media screen and (min-width:1590px) and (max-width:1650x) and (min-height:900px) {
 
     body,
     html,
