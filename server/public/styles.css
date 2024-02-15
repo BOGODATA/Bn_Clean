@@ -1061,7 +1061,7 @@ input[type="submit"]:hover {
     body,
     html {
         background: #773100 url(/HomePage/FOND.png);
-        background-size: 180vh 110%;
+        background-size: 100vw 80vw;
         background-repeat: no-repeat;
     }
 
@@ -1216,6 +1216,14 @@ input[type="submit"]:hover {
         display: flex;
         flex-direction: row;
         position: absolute;
+    }
+    .encart-overlay1 {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 27%;
+        margin-left: 6vw;
+        max-width: 38vh;
     }
 
 
