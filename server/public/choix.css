@@ -55,7 +55,7 @@ main {
     color: #773100;
     margin-top: 2vh;
     margin-bottom: 0;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #activity_type {
@@ -324,7 +324,7 @@ ul {
     }
 
     #partner_details {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial;
     }
 }
 
