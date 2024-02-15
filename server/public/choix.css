@@ -166,6 +166,35 @@ main {
 }
 
 
+@media screen and (min-width:1599px)and(max-width:1800px) {
+
+    body,
+    html,
+    main {
+        background: #773100 url(/Choix/FOND\ 2\ TEST.png);
+        background-size: 100vw 60vw;
+    }
+
+    .mid-container .right {
+        position: relative;
+        top: 0
+    }
+
+    .selection {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        top: -1vw;
+    }
+    .above-above-body
+.op {
+    width: 45vw;
+    position: relative;
+    left: 25vh;
+    top: 2vh;
+}
+}
 
 @media screen and (max-width:1300px) and (min-width:850px) {
     #partnersListContainer {

@@ -521,7 +521,7 @@ input[type="submit"]:hover {
     body,
     html {
         background: #773100 url(/HomePage/FOND.png);
-        background-size: 190vh 150vh;
+        background-size: 180vh 130vh;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
     }
@@ -557,7 +557,7 @@ input[type="submit"]:hover {
         display: flex;
         flex-direction: row;
         position: absolute;
-        left: -6vh;
+        left: -1vh;
     }
 
     .right-part form {
