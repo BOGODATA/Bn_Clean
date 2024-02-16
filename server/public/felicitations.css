@@ -29,11 +29,13 @@ body, html, main {
     display: flex;
     position: relative;
     justify-content: center;
+    width: 80%;
 
     .encart-overlay2 {
         position: absolute;
         text-align: center;
         top: 60%;
+
         left: 47%;
         transform: translate(-40%, -16vh);
         color: white;
@@ -161,13 +163,13 @@ body, html, main {
             }
         }
 }
-@media screen and (min-width:1590px) and (min-height:900px) {
+/* @media screen and (min-width:1590px) and (min-height:900px) {
     .above-above-body
 .op {
     width: 100vh;
     position: relative;
-    left: 6vw;
-    margin-top: 5vw;
+    left: 15vw;
+    margin-top: 20px;
 }
 
-}
+} */
