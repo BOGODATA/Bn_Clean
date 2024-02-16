@@ -550,12 +550,11 @@ input[type="submit"]:hover {
     .bn3 {
         position: absolute;
         left: 0vh;
-        bottom: -10vh;
+        bottom: -18vh;
         width: 23vh;
     }
 
     .bnseul {
-        margin-left: 0;
         width: 23vh;
     }
 
