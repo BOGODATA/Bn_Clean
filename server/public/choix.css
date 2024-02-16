@@ -2,8 +2,7 @@ body,
 html,
 main {
     background: #773100 url(/Choix/FOND\ 2\ TEST.png);
-    background-size: cover;
-}
+    background-size: 100vw 60vw;}
 
 #partnersListContainer {
     overflow: auto;
@@ -76,6 +75,8 @@ main {
         width: 100vh;
         position: relative;
         left: 20vh;
+        margin-top: 20px;
+
     }
 
     .drapeau {
