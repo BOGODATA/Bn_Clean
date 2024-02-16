@@ -528,6 +528,14 @@ input[type="submit"]:hover {
 .container{
     margin-left: 0;
 }
+.encart-overlay1 {
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 27%;
+    margin-left: 8vw;
+    max-width: 38vh;
+}
     .left-part .encart {
         width: 49vh;
     }
