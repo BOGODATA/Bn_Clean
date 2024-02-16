@@ -525,7 +525,9 @@ input[type="submit"]:hover {
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
     }
-
+.container{
+    margin-left: 0;
+}
     .left-part .encart {
         width: 49vh;
     }
