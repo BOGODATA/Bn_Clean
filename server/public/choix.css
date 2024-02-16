@@ -255,6 +255,29 @@ ul {
     font-family: BakerieRough-Black, sans-serif;
     box-shadow: inset 2px 2px 2px 1px rgb(6 34 6);
 }}
+@media screen and (min-width:1660px) and (min-height:1000px) {
+    body, html, main {
+        background: #773100 url(/Choix/FOND\ 2\ TEST.png);
+        background-size: 100vw 70vw !important;
+    }
+    .mid-container {
+        display: flex;
+        position: relative;
+        margin: 20px;
+        left: 25vh !important;
+        width: 110vh;
+        height: 62vh;
+        background: linear-gradient(to right, #1156a1 50%, white 50%);
+        top: 1vh;
+    }
+    .above-above-body
+.op {
+    width: 100vh;
+    position: relative;
+    left: 10vh !important;
+    margin-top: 20px;
+}
+}
 
 @media screen and (min-width:1590px) and (max-width:1650x) and (min-height:900px) {
 
