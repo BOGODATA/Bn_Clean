@@ -119,9 +119,11 @@
     }
 
     .encart-title {
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         font-weight: 700;
         margin-left: 3.5vh;
+        margin-top: 8px;
+
     }
 
     .numbers-container {
@@ -1144,7 +1146,7 @@ input[type="submit"]:hover {
         margin-left: -5vh;
 
         .encart {
-            width: 50vh;
+            width: 53vh;
         }
     }
 
@@ -1157,7 +1159,8 @@ input[type="submit"]:hover {
 
     .bnseul {
         margin-left: 0;
-        width: 13vw;
+        width: 13vw;   
+        margin-right: 2vw;
 
     }
 
